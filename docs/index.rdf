@@ -84,21 +84,6 @@
   <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/Tester">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/hasTrueStressAtFracture_Object">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/hasTrueStressAtFracture_Object">
-    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/hasTrueStressAtFracture_Object">
-    <rdfs:label xml:lang="en">hasTrueStressAtFracture</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/hasTrueStressAtFracture_Object">
-    <rdfs:range rdf:resource="https://w3id.org/steel/ProcessOntology/TrueStressAtFracture"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/hasTrueStressAtFracture_Object">
-    <skos:preflabel xml:lang="en">hasTrueStressAtFracture</skos:preflabel>
-  </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/attributeB">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
   </rdf:Description>
@@ -116,6 +101,21 @@
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/attributeB">
     <skos:preflabel xml:lang="en">attributeB Label EN</skos:preflabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/hasTrueStressAtFracture_Object">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/hasTrueStressAtFracture_Object">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/hasTrueStressAtFracture_Object">
+    <rdfs:label xml:lang="en">hasTrueStressAtFracture</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/hasTrueStressAtFracture_Object">
+    <rdfs:range rdf:resource="https://w3id.org/steel/ProcessOntology/TrueStressAtFracture"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/hasTrueStressAtFracture_Object">
+    <skos:preflabel xml:lang="en">hasTrueStressAtFracture</skos:preflabel>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/hasTestingFacility_Object">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
@@ -402,21 +402,6 @@
   <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/TestingFacility">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/hasPercentageExtension_Object">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/hasPercentageExtension_Object">
-    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/hasPercentageExtension_Object">
-    <rdfs:label xml:lang="en">hasPercentageExtension</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/hasPercentageExtension_Object">
-    <rdfs:range rdf:resource="https://w3id.org/steel/ProcessOntology/PercentageExtension"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/hasPercentageExtension_Object">
-    <skos:preflabel xml:lang="en">hasPercentageExtension</skos:preflabel>
-  </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/LowerYieldStrength">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
@@ -455,6 +440,21 @@
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/LowerYieldStrength">
     <isBasedOn rdf:resource="https://w3id.org/steel/ProcessOntology/EngineeringStress"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/hasPercentageExtension_Object">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/hasPercentageExtension_Object">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/hasPercentageExtension_Object">
+    <rdfs:label xml:lang="en">hasPercentageExtension</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/hasPercentageExtension_Object">
+    <rdfs:range rdf:resource="https://w3id.org/steel/ProcessOntology/PercentageExtension"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/hasPercentageExtension_Object">
+    <skos:preflabel xml:lang="en">hasPercentageExtension</skos:preflabel>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/hasMinimumCrosssectionAfterFracture_MilliM2">
     <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
@@ -537,26 +537,17 @@
   <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/hasYieldingIdentifier_Object">
     <skos:preflabel xml:lang="en">hasYieldingIdentifier</skos:preflabel>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/hasFrameRate_PER-SEC">
-    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/hasFailureTreatment_Object">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/hasFrameRate_PER-SEC">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/hasFailureTreatment_Object">
+    <rdfs:label xml:lang="en">hasFailureTreatment</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/hasFrameRate_PER-SEC">
-    <rdfs:label>has FrameRate</rdfs:label>
+  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/hasFailureTreatment_Object">
+    <rdfs:range rdf:resource="https://w3id.org/steel/ProcessOntology/FailureTreatment"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/hasFrameRate_PER-SEC">
-    <rdfs:seeAlso rdf:resource="https://w3id.org/steel/ProcessOntology/FrameRate"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/hasFrameRate_PER-SEC">
-    <rdfs:seeAlso rdf:resource="https://w3id.org/steel/ProcessOntology/hasFrameRate_Object"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/hasFrameRate_PER-SEC">
-    <hasUnit rdf:resource="http://qudt.org/vocab/unit/PER-SEC"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/hasFrameRate_PER-SEC">
-    <hasUnitLabel>s-1</hasUnitLabel>
+  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/hasFailureTreatment_Object">
+    <skos:preflabel xml:lang="en">hasFailureTreatment</skos:preflabel>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/YieldingIdentifier">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
@@ -589,17 +580,26 @@ Identifier which relates the Table to descibe the yield stress by using differen
   <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/YieldingIdentifier">
     <hasTypicalUnitLabel>-</hasTypicalUnitLabel>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/hasFailureTreatment_Object">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/hasFrameRate_PER-SEC">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/hasFailureTreatment_Object">
-    <rdfs:label xml:lang="en">hasFailureTreatment</rdfs:label>
+  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/hasFrameRate_PER-SEC">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/hasFailureTreatment_Object">
-    <rdfs:range rdf:resource="https://w3id.org/steel/ProcessOntology/FailureTreatment"/>
+  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/hasFrameRate_PER-SEC">
+    <rdfs:label>has FrameRate</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/hasFailureTreatment_Object">
-    <skos:preflabel xml:lang="en">hasFailureTreatment</skos:preflabel>
+  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/hasFrameRate_PER-SEC">
+    <rdfs:seeAlso rdf:resource="https://w3id.org/steel/ProcessOntology/FrameRate"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/hasFrameRate_PER-SEC">
+    <rdfs:seeAlso rdf:resource="https://w3id.org/steel/ProcessOntology/hasFrameRate_Object"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/hasFrameRate_PER-SEC">
+    <hasUnit rdf:resource="http://qudt.org/vocab/unit/PER-SEC"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/hasFrameRate_PER-SEC">
+    <hasUnitLabel>s-1</hasUnitLabel>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/hasMeanEngineeringStrainRate_Object">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
@@ -1996,6 +1996,18 @@ Identifier which relates the Table to descibe the yield stress by using differen
   <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/hasMaterial_Object">
     <skos:preflabel xml:lang="en">hasMaterial</skos:preflabel>
   </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/hasMassDensity_Object">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/hasMassDensity_Object">
+    <rdfs:label xml:lang="en">hasMassDensity</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/hasMassDensity_Object">
+    <rdfs:range rdf:resource="https://w3id.org/steel/ProcessOntology/MassDensity"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/hasMassDensity_Object">
+    <skos:preflabel xml:lang="en">hasMassDensity</skos:preflabel>
+  </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/hasLowerYieldStrength_Object">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
   </rdf:Description>
@@ -2088,18 +2100,6 @@ Identifier which relates the Table to descibe the yield stress by using differen
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/hasMeanEngineeringStrainRate_PER-SEC">
     <hasUnitLabel>s-1</hasUnitLabel>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/hasMassDensity_Object">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/hasMassDensity_Object">
-    <rdfs:label xml:lang="en">hasMassDensity</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/hasMassDensity_Object">
-    <rdfs:range rdf:resource="https://w3id.org/steel/ProcessOntology/MassDensity"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/hasMassDensity_Object">
-    <skos:preflabel xml:lang="en">hasMassDensity</skos:preflabel>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/hasTangentYieldModulus_Object">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
@@ -2464,20 +2464,47 @@ Identifier which relates the Table to descibe the yield stress by using differen
   <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/hasTestingFacility">
     <rdfs:seeAlso rdf:resource="https://w3id.org/steel/ProcessOntology/hasTestingFacility_Object"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/hasTimeStamp_Object">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/EngineeringStress">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/hasTimeStamp_Object">
-    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/EngineeringStress">
+    <rdfs:label xml:lang="en">EngineeringStress</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/hasTimeStamp_Object">
-    <rdfs:label xml:lang="en">hasTimeStamp</rdfs:label>
+  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/EngineeringStress">
+    <rdfs:subClassOf rdf:resource="https://material-digital.de/pmdco/ValueObject"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/hasTimeStamp_Object">
-    <rdfs:range rdf:resource="https://w3id.org/steel/ProcessOntology/TimeStamp"/>
+  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/EngineeringStress">
+    <skos:altlabel xml:lang="en">engineering stress</skos:altlabel>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/hasTimeStamp_Object">
-    <skos:preflabel xml:lang="en">hasTimeStamp</skos:preflabel>
+  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/EngineeringStress">
+    <skos:altlabel xml:lang="de">Sigma-technisch</skos:altlabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/EngineeringStress">
+    <skos:preflabel xml:lang="en">EngineeringStress</skos:preflabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/EngineeringStress">
+    <hasExampleData>9751</hasExampleData>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/EngineeringStress">
+    <hasLabelSource xml:lang="de">YS1-Fz-D1Q</hasLabelSource>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/EngineeringStress">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/EngineeringStress">
+    <hasSymbol xml:lang="en">Sig-technisch</hasSymbol>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/EngineeringStress">
+    <hasTypicalUnit rdf:resource="http://qudt.org/vocab/unit/MegaPA"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/EngineeringStress">
+    <hasTypicalUnitLabel>MPa</hasTypicalUnitLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/EngineeringStress">
+    <isBasedOn rdf:resource="https://w3id.org/steel/ProcessOntology/Force"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/EngineeringStress">
+    <isBasedOn rdf:resource="https://w3id.org/steel/ProcessOntology/OriginalCrosssection"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/TimeDependentEngineeringStrainRate">
     <isBasedOn rdf:resource="https://w3id.org/steel/ProcessOntology/Time"/>
@@ -2530,47 +2557,20 @@ Identifier which relates the Table to descibe the yield stress by using differen
   <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/TimeDependentEngineeringStrainRate">
     <hasTypicalUnit rdf:resource="http://qudt.org/vocab/unit/PER-SEC"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/EngineeringStress">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/hasTimeStamp_Object">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/EngineeringStress">
-    <rdfs:label xml:lang="en">EngineeringStress</rdfs:label>
+  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/hasTimeStamp_Object">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/EngineeringStress">
-    <rdfs:subClassOf rdf:resource="https://material-digital.de/pmdco/ValueObject"/>
+  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/hasTimeStamp_Object">
+    <rdfs:label xml:lang="en">hasTimeStamp</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/EngineeringStress">
-    <skos:altlabel xml:lang="en">engineering stress</skos:altlabel>
+  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/hasTimeStamp_Object">
+    <rdfs:range rdf:resource="https://w3id.org/steel/ProcessOntology/TimeStamp"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/EngineeringStress">
-    <skos:altlabel xml:lang="de">Sigma-technisch</skos:altlabel>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/EngineeringStress">
-    <skos:preflabel xml:lang="en">EngineeringStress</skos:preflabel>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/EngineeringStress">
-    <hasExampleData>9751</hasExampleData>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/EngineeringStress">
-    <hasLabelSource xml:lang="de">YS1-Fz-D1Q</hasLabelSource>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/EngineeringStress">
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/EngineeringStress">
-    <hasSymbol xml:lang="en">Sig-technisch</hasSymbol>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/EngineeringStress">
-    <hasTypicalUnit rdf:resource="http://qudt.org/vocab/unit/MegaPA"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/EngineeringStress">
-    <hasTypicalUnitLabel>MPa</hasTypicalUnitLabel>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/EngineeringStress">
-    <isBasedOn rdf:resource="https://w3id.org/steel/ProcessOntology/Force"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/EngineeringStress">
-    <isBasedOn rdf:resource="https://w3id.org/steel/ProcessOntology/OriginalCrosssection"/>
+  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/hasTimeStamp_Object">
+    <skos:preflabel xml:lang="en">hasTimeStamp</skos:preflabel>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/ConceptB">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
@@ -2743,21 +2743,6 @@ Identifier which relates the Table to descibe the yield stress by using differen
   <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/hasYoungsModulus_Object">
     <skos:preflabel xml:lang="en">hasYoungsModulus</skos:preflabel>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/hasTestPieceLength_Object">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/hasTestPieceLength_Object">
-    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/hasTestPieceLength_Object">
-    <rdfs:label xml:lang="en">hasTestPieceLength</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/hasTestPieceLength_Object">
-    <rdfs:range rdf:resource="https://w3id.org/steel/ProcessOntology/TestPieceLength"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/hasTestPieceLength_Object">
-    <skos:preflabel xml:lang="en">hasTestPieceLength</skos:preflabel>
-  </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/hasTestPieceGeometry_Object">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
   </rdf:Description>
@@ -2772,6 +2757,21 @@ Identifier which relates the Table to descibe the yield stress by using differen
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/hasTestPieceGeometry_Object">
     <skos:preflabel xml:lang="en">hasTestPieceGeometry</skos:preflabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/hasTestPieceLength_Object">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/hasTestPieceLength_Object">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/hasTestPieceLength_Object">
+    <rdfs:label xml:lang="en">hasTestPieceLength</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/hasTestPieceLength_Object">
+    <rdfs:range rdf:resource="https://w3id.org/steel/ProcessOntology/TestPieceLength"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/hasTestPieceLength_Object">
+    <skos:preflabel xml:lang="en">hasTestPieceLength</skos:preflabel>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/ModulusOfElasticity">
     <hasSymbol xml:lang="en">E</hasSymbol>
@@ -3308,7 +3308,7 @@ Identifier which relates the Table to descibe the yield stress by using differen
     <skos:preflabel xml:lang="en">hasForceMeasuringSystem</skos:preflabel>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/Machine">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/Machine">
     <rdfs:label xml:lang="en">Machine</rdfs:label>
@@ -3338,7 +3338,7 @@ Identifier which relates the Table to descibe the yield stress by using differen
     <hasLabelSource xml:lang="de">YS1-Fz-D1Q</hasLabelSource>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/Machine">
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/YoungsModulus">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
@@ -3939,7 +3939,7 @@ Identifier which relates the Table to descibe the yield stress by using differen
     <dcterms:created>2023-06-01</dcterms:created>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology">
-    <dcterms:date>2024-04-25T11:04:20+00:00</dcterms:date>
+    <dcterms:date>2024-04-25T11:26:00+00:00</dcterms:date>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology">
     <dcterms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>

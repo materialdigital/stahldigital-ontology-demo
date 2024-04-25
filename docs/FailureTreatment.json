@@ -1,0 +1,75 @@
+
+{
+  "https://w3id.org/steel/ProcessOntology/FailureTreatment" : {
+    "http://purl.org/dc/terms/description" : [ {
+        "value" : "Descibes the treatment of failure:\n<0\u2026User defined failure subroutine, matusr_24 in dyn21.F\n=0\u2026no failure is taken into account\n>0\u2026constant failure strain",
+        "lang" : "en",
+        "type" : "literal"
+        }
+      
+      ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+        "value" : "http://www.w3.org/2002/07/owl#Class",
+        "type" : "uri"
+        }
+      ,
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#Concept",
+        "type" : "uri"
+        }
+      
+      ],
+    "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+        "value" : "FailureTreatment",
+        "lang" : "en",
+        "type" : "literal"
+        }
+      
+      ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+        "value" : "https://material-digital.de/pmdco/ValueObject",
+        "type" : "uri"
+        }
+      
+      ],
+    "http://www.w3.org/2004/02/skos/core#altlabel" : [ {
+        "value" : "FAIL",
+        "lang" : "en",
+        "type" : "literal"
+        }
+      
+      ],
+    "http://www.w3.org/2004/02/skos/core#preflabel" : [ {
+        "value" : "FailureTreatment",
+        "lang" : "en",
+        "type" : "literal"
+        }
+      
+      ],
+    "https://w3id.org/steel/ProcessOntology/hasExampleData" : [ {
+        "value" : "1.17",
+        "type" : "literal"
+        }
+      
+      ],
+    "https://w3id.org/steel/ProcessOntology/hasLabelSource" : [ {
+        "value" : "LS-DYNA_Manual_Volume_2",
+        "lang" : "en",
+        "type" : "literal"
+        }
+      
+      ],
+    "https://w3id.org/steel/ProcessOntology/hasTypicalUnit" : [ {
+        "value" : "https://qudt.org/vocab/unit/UNITLESS",
+        "type" : "uri"
+        }
+      
+      ],
+    "https://w3id.org/steel/ProcessOntology/hasTypicalUnitLabel" : [ {
+        "value" : "1",
+        "type" : "literal"
+        }
+      
+      ]
+    }
+  }

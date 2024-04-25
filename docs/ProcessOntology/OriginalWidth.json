@@ -45,8 +45,20 @@
         }
       ,
       {
+        "value" : "Probenbreite",
+        "lang" : "de",
+        "type" : "literal"
+        }
+      ,
+      {
         "value" : "Probenbreite b0",
         "lang" : "de",
+        "type" : "literal"
+        }
+      ,
+      {
+        "value" : "specimen width",
+        "lang" : "en",
         "type" : "literal"
         }
       
@@ -85,6 +97,12 @@
       
       ],
     "https://w3id.org/steel/ProcessOntology/hasSymbol" : [ {
+        "value" : "b",
+        "lang" : "en",
+        "type" : "literal"
+        }
+      ,
+      {
         "value" : "b_{0}",
         "lang" : "en",
         "type" : "literal"

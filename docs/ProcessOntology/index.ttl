@@ -43,6 +43,12 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
         rdfs:range      :TrueStressAtFracture;
         skos:preflabel  "hasTrueStressAtFracture"@en .
 
+:hasTestingFacility_Object
+        rdf:type        owl:ObjectProperty , rdf:Property;
+        rdfs:label      "hasTestingFacility"@en;
+        rdfs:range      :TestingFacility;
+        skos:preflabel  "hasTestingFacility"@en .
+
 :attributeB  rdf:type   owl:DatatypeProperty;
         rdfs:domain     :ConceptB;
         rdfs:label      "attributeB Label EN"@en;
@@ -50,11 +56,13 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
         dc:description  "attributeB Description EN"@en;
         skos:preflabel  "attributeB Label EN"@en .
 
-:hasTestingFacility_Object
-        rdf:type        owl:ObjectProperty , rdf:Property;
-        rdfs:label      "hasTestingFacility"@en;
-        rdfs:range      :TestingFacility;
-        skos:preflabel  "hasTestingFacility"@en .
+:Material_Edelstahl_1.4307
+        rdf:type         skos:Concept , owl:Class;
+        rdfs:label       "Material_Edelstahl_1.4307"@en;
+        rdfs:subClassOf  pmdco:ValueObject;
+        skos:altlabel    "Rust free steel AISI304"@en , "Edelstahl WNr. 1.4307"@de;
+        skos:preflabel   "Material_Edelstahl_1.4307"@en;
+        :isBasedOn       :Rustfreesteel .
 
 :hasTrueStress_MegaPA
         rdf:type       rdf:Property , owl:DatatypeProperty;
@@ -98,6 +106,26 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
         rdfs:label    "has StrainRateFormulationFlag";
         rdfs:seeAlso  :StrainRateFormulationFlag , :hasStrainRateFormulationFlag_Object .
 
+<https://w3id.org/steel/ProcessOntology/Project%20Name>
+        rdf:type         skos:Concept , owl:Class;
+        rdfs:label       "Project Name"@en;
+        rdfs:subClassOf  pmdco:ValueObject;
+        skos:altlabel    "project name"@en , "Projekt Name"@de;
+        skos:preflabel   "Project Name"@en .
+
+:YieldStrength_0_2_percentil
+        rdf:type              owl:Class , skos:Concept;
+        rdfs:label            "YieldStrength_0_2_percentil"@en;
+        rdfs:subClassOf       pmdco:ValueObject;
+        dcterms:description   "Yield strength at 0,2% strain"@en , "Streckgrenze bei 0,2% Dehnung"@de;
+        skos:altlabel         "Rp0,2"@en , "Rp0,2"@de;
+        skos:preflabel        "YieldStrength_0_2_percentil"@en;
+        :hasExampleData       "230";
+        :hasSymbol            "Rp0,2"@en;
+        :hasSymbolLatex       "R_{p0,2}"@en;
+        :hasTypicalUnit       qudtUnit:MegaPA;
+        :hasTypicalUnitLabel  "MPa" .
+
 :FrameRate  rdf:type                   skos:Concept , owl:Class;
         rdfs:label                     "FrameRate"@en;
         rdfs:subClassOf                pmdco:ValueObject;
@@ -127,6 +155,12 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
         :hasTypicalUnit       <https://qudt.org/vocab/unit/MegaPA>;
         :hasTypicalUnitLabel  "MPa" .
 
+:hasEngineeringStress_Object
+        rdf:type        owl:ObjectProperty , rdf:Property;
+        rdfs:label      "hasEngineeringStress"@en;
+        rdfs:range      :EngineeringStress;
+        skos:preflabel  "hasEngineeringStress"@en .
+
 :hasPercentagePlasticExtensionAtMaximumForce_PERCENT
         rdf:type       rdf:Property , owl:DatatypeProperty;
         rdfs:label     "has PercentagePlasticExtensionAtMaximumForce";
@@ -134,16 +168,10 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
         :hasUnit       qudtUnit:PERCENT;
         :hasUnitLabel  "%" .
 
-:hasEngineeringStress_Object
-        rdf:type        owl:ObjectProperty , rdf:Property;
-        rdfs:label      "hasEngineeringStress"@en;
-        rdfs:range      :EngineeringStress;
-        skos:preflabel  "hasEngineeringStress"@en .
-
-:TestingFacility  rdf:type             skos:Concept , owl:Class;
+:TestingFacility  rdf:type             owl:Class , skos:Concept;
         rdfs:label                     "TestingFacility"@en;
         rdfs:subClassOf                pmdco:ValueObject;
-        skos:altlabel                  "Testing facility"@en;
+        skos:altlabel                  "Prüfinstitut"@de , "Testing facility"@en , "testing facility"@en;
         skos:preflabel                 "TestingFacility"@en;
         :hasDescriptionCitationSource  "Authors"@en .
 
@@ -171,6 +199,17 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
         rdfs:seeAlso   :MinimumCrosssectionAfterFracture , :hasMinimumCrosssectionAfterFracture_Object;
         :hasUnit       qudtUnit:MilliM2;
         :hasUnitLabel  "mm2" .
+
+:Material-steel-concrete-R
+        rdf:type         owl:Class , skos:Concept;
+        rdfs:label       "Material-steel-concrete-R"@en;
+        rdfs:seeAlso     :Schaftfestigkeit_FBSIID6_R;
+        rdfs:subClassOf  pmdco:ValueObject;
+        skos:altlabel    "Stahlwerkstoffe Betonbefestiger"@de , "steel material for concrete fastening"@en;
+        skos:preflabel   "Material-steel-concrete-R"@en;
+        skos:related     :Schaftfestigkeit_FBSIID6_R;
+        :hasExampleData  "1.4400999999999999";
+        :hasSymbol       "Msc"@en .
 
 :Force  rdf:type                       owl:Class , skos:Concept;
         rdfs:label                     "Force"@en;
@@ -290,10 +329,10 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
         :hasLabelSource                "YS1-Fz-D1Q"@de;
         :hasTypicalUnitLabel           "mm/s or m/s" .
 
-:Material  rdf:type                    skos:Concept , owl:Class;
+:Material  rdf:type                    owl:Class , skos:Concept;
         rdfs:label                     "Material"@en;
         rdfs:subClassOf                pmdco:ValueObject;
-        skos:altlabel                  "Werkstoff"@de , "material"@en;
+        skos:altlabel                  "Werkstoff"@de , "Material"@en , "material"@en;
         skos:preflabel                 "Material"@en;
         :hasDescriptionCitationSource  "Authors"@en;
         :hasExampleData                "HX340LAD";
@@ -317,12 +356,29 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
         rdfs:range      :OriginalWidth;
         skos:preflabel  "hasOriginalWidth"@en .
 
+:hasMaterial_Edelstahl_1.4307
+        rdf:type      rdf:Property , owl:DatatypeProperty;
+        rdfs:label    "has Material_Edelstahl_1.4307";
+        rdfs:seeAlso  :Material_Edelstahl_1.4307 , :hasMaterial_Edelstahl_1.4307_Object .
+
 :hasPoissonRatio_UNITLESS
         rdf:type       rdf:Property , owl:DatatypeProperty;
         rdfs:label     "has PoissonRatio";
         rdfs:seeAlso   :PoissonRatio , :hasPoissonRatio_Object;
         :hasUnit       <https://qudt.org/vocab/unit/UNITLESS>;
         :hasUnitLabel  "1" .
+
+:Project_Number  rdf:type    skos:Concept , owl:Class;
+        rdfs:label           "Project_Number"@en;
+        rdfs:seeAlso         :Project_Name;
+        rdfs:subClassOf      pmdco:ValueObject;
+        dcterms:description  "Project ID Code/Number"@en , "Projektidentifikationsnummer"@de;
+        skos:altlabel        "Projekt-Nummer"@de;
+        skos:preflabel       "Project_Number"@en;
+        skos:related         :Project_Name;
+        :hasExampleData      "P-012345-01-01";
+        :hasLabelSource      "Project-Number"@en;
+        :hasSymbol           "PSP"@en .
 
 :hasYieldStress_Object
         rdf:type        owl:ObjectProperty;
@@ -347,6 +403,24 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
         rdfs:range      :ExtensometerGaugeLength;
         skos:preflabel  "hasExtensometerGaugeLength"@en .
 
+:Schaftfestigkeit_FBSIID6_R
+        rdf:type              owl:Class , skos:Concept;
+        rdfs:label            "Schaftfestigkeit_FBSIID6_R"@en;
+        rdfs:seeAlso          :Schaftdurchmesser_FBSIID6;
+        rdfs:subClassOf       pmdco:ValueObject;
+        skos:altlabel         "shaftstrength"@en , "Schaftfestigkeit"@de;
+        skos:preflabel        "Schaftfestigkeit_FBSIID6_R"@en;
+        skos:related          :Schaftdurchmesser_FBSIID6;
+        :hasTypicalUnit       qudtUnit:MegaPA;
+        :hasTypicalUnitLabel  "MPa" .
+
+:Schaftdurchmesser_FBSIID6
+        rdf:type         skos:Concept , owl:Class;
+        rdfs:label       "Schaftdurchmesser_FBSIID6"@en;
+        rdfs:subClassOf  pmdco:ValueObject;
+        skos:altlabel    "Shaft diameter"@en , "Schaftdurchmesser"@de;
+        skos:preflabel   "Schaftdurchmesser_FBSIID6"@en .
+
 :OriginalThickness  rdf:type           skos:Concept , owl:Class;
         rdfs:label                     "OriginalThickness"@en;
         rdfs:subClassOf                pmdco:ValueObject;
@@ -365,6 +439,12 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
         rdfs:label      "ConceptA Label EN"@en , "ConceptA Label DE"@de;
         skos:altlabel   "ConceptA Synonym EN"@en , "ConceptA Synonym EN"@de;
         skos:preflabel  "ConceptA Label EN"@en , "ConceptA Label DE"@de .
+
+:hasSchaftfestigkeit_FBSIID6_GVZ_Object
+        rdf:type        owl:ObjectProperty , rdf:Property;
+        rdfs:label      "hasSchaftfestigkeit_FBSIID6_GVZ"@en;
+        rdfs:range      :Schaftfestigkeit_FBSIID6_GVZ;
+        skos:preflabel  "hasSchaftfestigkeit_FBSIID6_GVZ"@en .
 
 :hasFrameRate_Object  rdf:type  owl:ObjectProperty , rdf:Property;
         rdfs:label      "hasFrameRate"@en;
@@ -395,6 +475,13 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
         rdfs:range      :MaterialIdentifier;
         skos:preflabel  "hasMaterialIdentifier"@en .
 
+:hasSchaftfestigkeit_FBSIID6_R_MegaPA
+        rdf:type       rdf:Property , owl:DatatypeProperty;
+        rdfs:label     "has Schaftfestigkeit_FBSIID6_R";
+        rdfs:seeAlso   :Schaftfestigkeit_FBSIID6_R , :hasSchaftfestigkeit_FBSIID6_R_Object;
+        :hasUnit       qudtUnit:MegaPA;
+        :hasUnitLabel  "MPa" .
+
 :hasProjectNumber_Object
         rdf:type        owl:ObjectProperty , rdf:Property;
         rdfs:label      "hasProjectNumber"@en;
@@ -408,6 +495,11 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
         :hasUnit       qudtUnit:MilliM;
         :hasUnitLabel  "mm" .
 
+:hasMaterial-steel-concrete-R
+        rdf:type      rdf:Property , owl:DatatypeProperty;
+        rdfs:label    "has Material-steel-concrete-R";
+        rdfs:seeAlso  :Material-steel-concrete-R , :hasMaterial-steel-concrete-R_Object .
+
 :hasModulusOfElasticity_Object
         rdf:type        owl:ObjectProperty , rdf:Property;
         rdfs:label      "hasModulusOfElasticity"@en;
@@ -419,6 +511,12 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
         rdfs:label      "hasMatPiecewiseLinearPlasticity"@en;
         rdfs:range      :MatPiecewiseLinearPlasticity;
         skos:preflabel  "hasMatPiecewiseLinearPlasticity"@en .
+
+:hasTestTemperature_Object
+        rdf:type        owl:ObjectProperty , rdf:Property;
+        rdfs:label      "hasTestTemperature"@en;
+        rdfs:range      :TestTemperature;
+        skos:preflabel  "hasTestTemperature"@en .
 
 :ForceMeasuringSystem
         rdf:type             owl:Class , skos:Concept;
@@ -458,6 +556,12 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
         :hasSymbol                     "L_{0}"@en;
         :hasTypicalUnit                qudtUnit:MilliM;
         :hasTypicalUnitLabel           "mm" .
+
+:hasSpecWeight_Object
+        rdf:type        owl:ObjectProperty , rdf:Property;
+        rdfs:label      "hasSpecWeight"@en;
+        rdfs:range      :SpecWeight;
+        skos:preflabel  "hasSpecWeight"@en .
 
 :hasProjectName  rdf:type  rdf:Property , owl:DatatypeProperty;
         rdfs:label    "has ProjectName";
@@ -574,23 +678,28 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
         rdfs:range      :ProjectName;
         skos:preflabel  "hasProjectName"@en .
 
-:hasFailureTreatment_UNITLESS
-        rdf:type       rdf:Property , owl:DatatypeProperty;
-        rdfs:label     "has FailureTreatment";
-        rdfs:seeAlso   :FailureTreatment , :hasFailureTreatment_Object;
-        :hasUnit       <https://qudt.org/vocab/unit/UNITLESS>;
-        :hasUnitLabel  "1" .
-
-:hasExtension_Object  rdf:type  owl:ObjectProperty , rdf:Property;
-        rdfs:label      "hasExtension"@en;
-        rdfs:range      :Extension;
-        skos:preflabel  "hasExtension"@en .
+:hasSchaftdurchmesser_FBSIID6
+        rdf:type      rdf:Property , owl:DatatypeProperty;
+        rdfs:label    "has Schaftdurchmesser_FBSIID6";
+        rdfs:seeAlso  :Schaftdurchmesser_FBSIID6 , :hasSchaftdurchmesser_FBSIID6_Object .
 
 :hasNominalEngineeringStrainRate_Object
         rdf:type        owl:ObjectProperty , rdf:Property;
         rdfs:label      "hasNominalEngineeringStrainRate"@en;
         rdfs:range      :NominalEngineeringStrainRate;
         skos:preflabel  "hasNominalEngineeringStrainRate"@en .
+
+:hasExtension_Object  rdf:type  owl:ObjectProperty , rdf:Property;
+        rdfs:label      "hasExtension"@en;
+        rdfs:range      :Extension;
+        skos:preflabel  "hasExtension"@en .
+
+:hasFailureTreatment_UNITLESS
+        rdf:type       rdf:Property , owl:DatatypeProperty;
+        rdfs:label     "has FailureTreatment";
+        rdfs:seeAlso   :FailureTreatment , :hasFailureTreatment_Object;
+        :hasUnit       <https://qudt.org/vocab/unit/UNITLESS>;
+        :hasUnitLabel  "1" .
 
 :MatPiecewiseLinearPlasticity
         rdf:type             skos:Concept , owl:Class;
@@ -615,7 +724,7 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
         rdfs:seeAlso                   :TestPieceGeometry;
         rdfs:subClassOf                pmdco:ValueObject;
         dcterms:description            "\"The length of the parallel part of the specimen\" [Authors]"@en;
-        skos:altlabel                  "parallele Messlänge Lc"@de , "Parallel length"@en;
+        skos:altlabel                  "parallele Messlänge Lc"@de , "Parallel length"@en , "Versuchslänge"@de;
         skos:preflabel                 "ParallelLength"@en;
         skos:related                   :TestPieceGeometry;
         :hasDescriptionCitationSource  "Authors"@en;
@@ -664,6 +773,12 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
 :hasTime  rdf:type    rdf:Property , owl:DatatypeProperty;
         rdfs:label    "has Time";
         rdfs:seeAlso  :Time , :hasTime_Object .
+
+:hasMaterial-steel-concrete-GVZ_Object
+        rdf:type        owl:ObjectProperty , rdf:Property;
+        rdfs:label      "hasMaterial-steel-concrete-GVZ"@en;
+        rdfs:range      :Material-steel-concrete-GVZ;
+        skos:preflabel  "hasMaterial-steel-concrete-GVZ"@en .
 
 :hasTimeDependentEngineeringStrainRate_PER-SEC
         rdf:type       rdf:Property , owl:DatatypeProperty;
@@ -720,12 +835,6 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
         rdfs:range      :MassDensity;
         skos:preflabel  "hasMassDensity"@en .
 
-:hasTangentYieldModulus_Object
-        rdf:type        owl:ObjectProperty;
-        rdfs:label      "hasTangentYieldModulus"@en;
-        rdfs:range      :TangentYieldModulus;
-        skos:preflabel  "hasTangentYieldModulus"@en .
-
 :TrueStressAtFracture
         rdf:type                       owl:Class , skos:Concept;
         rdfs:label                     "TrueStressAtFracture"@en;
@@ -741,12 +850,26 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
         :hasTypicalUnitLabel           "MPa";
         :isBasedOn                     :ForceAtFracture , :MinimumCrosssectionAfterFracture .
 
+:hasTangentYieldModulus_Object
+        rdf:type        owl:ObjectProperty;
+        rdfs:label      "hasTangentYieldModulus"@en;
+        rdfs:range      :TangentYieldModulus;
+        skos:preflabel  "hasTangentYieldModulus"@en .
+
 :hasStrainRateScaleParameterC_UNITLESS
         rdf:type       rdf:Property , owl:DatatypeProperty;
         rdfs:label     "has StrainRateScaleParameterC";
         rdfs:seeAlso   :StrainRateScaleParameterC , :hasStrainRateScaleParameterC_Object;
         :hasUnit       <https://qudt.org/vocab/unit/UNITLESS>;
         :hasUnitLabel  "1" .
+
+:SpecWeight  rdf:type         skos:Concept , owl:Class;
+        rdfs:label            "SpecWeight"@en;
+        rdfs:subClassOf       pmdco:ValueObject;
+        skos:altlabel         "Weight of Specimen"@en , "Probengewicht"@de;
+        skos:preflabel        "SpecWeight"@en;
+        :hasSymbol            "w"@en;
+        :hasTypicalUnitLabel  "kg" .
 
 :hasMachine  rdf:type  rdf:Property , owl:DatatypeProperty;
         rdfs:label    "has Machine";
@@ -758,24 +881,49 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
         :hasUnit       qudtUnit:KiloN;
         :hasUnitLabel  "kN" .
 
+:Material-steel-concrete-GVZ
+        rdf:type         owl:Class , skos:Concept;
+        rdfs:label       "Material-steel-concrete-GVZ"@en;
+        rdfs:seeAlso     :Schaftfestigkeit_FBSIID6_GVZ;
+        rdfs:subClassOf  pmdco:ValueObject;
+        skos:altlabel    "steel material for concrete fastening"@en;
+        skos:preflabel   "Material-steel-concrete-GVZ"@en;
+        skos:related     :Schaftfestigkeit_FBSIID6_GVZ;
+        :hasExampleData  "C15" .
+
+:hasLoadcell_N  rdf:type  rdf:Property , owl:DatatypeProperty;
+        rdfs:label     "has Loadcell";
+        rdfs:seeAlso   :Loadcell , :hasLoadcell_Object;
+        :hasUnit       qudtUnit:N;
+        :hasUnitLabel  "N" .
+
+:hasLoadcell_Object  rdf:type  owl:ObjectProperty , rdf:Property;
+        rdfs:label      "hasLoadcell"@en;
+        rdfs:range      :Loadcell;
+        skos:preflabel  "hasLoadcell"@en .
+
 :hasParallelLength_Object
         rdf:type        owl:ObjectProperty , rdf:Property;
         rdfs:label      "hasParallelLength"@en;
         rdfs:range      :ParallelLength;
         skos:preflabel  "hasParallelLength"@en .
 
+:hasProject_Name  rdf:type  rdf:Property , owl:DatatypeProperty;
+        rdfs:label    "has Project_Name";
+        rdfs:seeAlso  :Project_Name , :hasProject_Name_Object .
+
 :OriginalWidth  rdf:type               owl:Class , skos:Concept;
         rdfs:label                     "OriginalWidth"@en;
         rdfs:seeAlso                   :TestPieceGeometry;
         rdfs:subClassOf                pmdco:ValueObject;
         dcterms:description            "\"Original width of the parallel length of a flat test piece\" [Authors]"@en;
-        skos:altlabel                  "Probenbreite b0"@de , "Original width"@en;
+        skos:altlabel                  "Probenbreite"@de , "Probenbreite b0"@de , "specimen width"@en , "Original width"@en;
         skos:preflabel                 "OriginalWidth"@en;
         skos:related                   :TestPieceGeometry;
         :hasDescriptionCitationSource  "Authors"@en;
         :hasExampleData                "10054";
         :hasLabelSource                "YS1-Fz-D1Q"@de;
-        :hasSymbol                     "b_{0}"@en;
+        :hasSymbol                     "b"@en , "b_{0}"@en;
         :hasTypicalUnit                qudtUnit:MilliM;
         :hasTypicalUnitLabel           "mm" .
 
@@ -808,8 +956,31 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
         :hasTypicalUnit       <https://qudt.org/vocab/unit/SEC>;
         :hasTypicalUnitLabel  "s" .
 
+:hasTestTemperature_DEG_C
+        rdf:type       rdf:Property , owl:DatatypeProperty;
+        rdfs:label     "has TestTemperature";
+        rdfs:seeAlso   :TestTemperature , :hasTestTemperature_Object;
+        :hasUnit       qudtUnit:DEG_C;
+        :hasUnitLabel  "°C" .
+
 :J-Per-Gm-K  rdf:type  qudt:Unit;
         :hasUnitLabel  "J/(g*K)" .
+
+:TestTemperature  rdf:type    skos:Concept , owl:Class;
+        rdfs:label            "TestTemperature"@en;
+        rdfs:subClassOf       pmdco:ValueObject;
+        skos:altlabel         "Test temperature"@en , "Prüftemperatur"@de;
+        skos:preflabel        "TestTemperature"@en;
+        :hasExampleData       "23";
+        :hasSymbol            "T"@en;
+        :hasTypicalUnit       qudtUnit:DEG_C;
+        :hasTypicalUnitLabel  "°C" .
+
+:hasSchaftfestigkeit_FBSIID6_R_Object
+        rdf:type        owl:ObjectProperty , rdf:Property;
+        rdfs:label      "hasSchaftfestigkeit_FBSIID6_R"@en;
+        rdfs:range      :Schaftfestigkeit_FBSIID6_R;
+        skos:preflabel  "hasSchaftfestigkeit_FBSIID6_R"@en .
 
 :PercentageElongationAfterFracture
         rdf:type                       owl:Class , skos:Concept;
@@ -875,11 +1046,23 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
         :hasTypicalUnitLabel  "MPa";
         :isBasedOn            :Force , :OriginalCrosssection .
 
+:hasYieldStrength_0_2_percentil_MegaPA
+        rdf:type       rdf:Property , owl:DatatypeProperty;
+        rdfs:label     "has YieldStrength_0_2_percentil";
+        rdfs:seeAlso   :YieldStrength_0_2_percentil , :hasYieldStrength_0_2_percentil_Object;
+        :hasUnit       qudtUnit:MegaPA;
+        :hasUnitLabel  "MPa" .
+
 :ConceptB  rdf:type     owl:Class;
         rdfs:comment    "ConceptB Description EN"@en;
         rdfs:label      "ConceptB Label EN"@en , "ConceptB Label DE"@de;
         skos:altlabel   "ConceptB Synonym EN"@en , "ConceptB Synonym EN"@de;
         skos:preflabel  "ConceptB Label EN"@en , "ConceptB Label DE"@de .
+
+:hasSchaftfestigkeit_FBSIID6_GVZ
+        rdf:type      rdf:Property , owl:DatatypeProperty;
+        rdfs:label    "has Schaftfestigkeit_FBSIID6_GVZ";
+        rdfs:seeAlso  :Schaftfestigkeit_FBSIID6_GVZ , :hasSchaftfestigkeit_FBSIID6_GVZ_Object .
 
 :hasNominalEngineeringStrainRate_PER-SEC
         rdf:type       rdf:Property , owl:DatatypeProperty;
@@ -920,11 +1103,22 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
         rdfs:label    "has ProjectNumber";
         rdfs:seeAlso  :ProjectNumber , :hasProjectNumber_Object .
 
+:hasMaterial-steel-concrete-GVZ
+        rdf:type      rdf:Property , owl:DatatypeProperty;
+        rdfs:label    "has Material-steel-concrete-GVZ";
+        rdfs:seeAlso  :Material-steel-concrete-GVZ , :hasMaterial-steel-concrete-GVZ_Object .
+
 :hasPercentagePlasticExtensionAtMaximumForce_Object
         rdf:type        owl:ObjectProperty , rdf:Property;
         rdfs:label      "hasPercentagePlasticExtensionAtMaximumForce"@en;
         rdfs:range      :PercentagePlasticExtensionAtMaximumForce;
         skos:preflabel  "hasPercentagePlasticExtensionAtMaximumForce"@en .
+
+:hasSchaftdurchmesser_FBSIID6_Object
+        rdf:type        owl:ObjectProperty , rdf:Property;
+        rdfs:label      "hasSchaftdurchmesser_FBSIID6"@en;
+        rdfs:range      :Schaftdurchmesser_FBSIID6;
+        skos:preflabel  "hasSchaftdurchmesser_FBSIID6"@en .
 
 :hasYoungsModulus_Object
         rdf:type        owl:ObjectProperty;
@@ -937,6 +1131,12 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
         rdfs:label      "hasTestPieceLength"@en;
         rdfs:range      :TestPieceLength;
         skos:preflabel  "hasTestPieceLength"@en .
+
+:hasProject_Name_Object
+        rdf:type        owl:ObjectProperty , rdf:Property;
+        rdfs:label      "hasProject_Name"@en;
+        rdfs:range      :Project_Name;
+        skos:preflabel  "hasProject_Name"@en .
 
 :hasTestPieceGeometry_Object
         rdf:type        owl:ObjectProperty , rdf:Property;
@@ -994,6 +1194,10 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
 :hasTester  rdf:type  rdf:Property , owl:DatatypeProperty;
         rdfs:label    "has Tester";
         rdfs:seeAlso  :Tester , :hasTester_Object .
+
+:hasProject_Number  rdf:type  rdf:Property , owl:DatatypeProperty;
+        rdfs:label    "has Project_Number";
+        rdfs:seeAlso  :Project_Number , :hasProject_Number_Object .
 
 :MinimumCrosssectionAfterFracture
         rdf:type                       skos:Concept , owl:Class;
@@ -1143,6 +1347,12 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
         rdfs:range      :Time;
         skos:preflabel  "hasTime"@en .
 
+:hasOriginalThickness_Object
+        rdf:type        owl:ObjectProperty , rdf:Property;
+        rdfs:label      "hasOriginalThickness"@en;
+        rdfs:range      :OriginalThickness;
+        skos:preflabel  "hasOriginalThickness"@en .
+
 :NominalEngineeringStrainRate
         rdf:type                       skos:Concept , owl:Class;
         rdfs:label                     "NominalEngineeringStrainRate"@en;
@@ -1158,11 +1368,6 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
         :hasTypicalUnitLabel           "s-1";
         :isBasedOn                     :InitialDisplacementRate , :ParallelLength .
 
-:hasForceMeasuringSystem
-        rdf:type      rdf:Property , owl:DatatypeProperty;
-        rdfs:label    "has ForceMeasuringSystem";
-        rdfs:seeAlso  :ForceMeasuringSystem , :hasForceMeasuringSystem_Object .
-
 :StrainRateFormulationFlag
         rdf:type             owl:Class , skos:Concept;
         rdfs:label           "StrainRateFormulationFlag"@en;
@@ -1173,11 +1378,10 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
         :hasExampleData      "0";
         :hasLabelSource      "LS-DYNA_Manual_Volume_2"@en .
 
-:hasOriginalThickness_Object
-        rdf:type        owl:ObjectProperty , rdf:Property;
-        rdfs:label      "hasOriginalThickness"@en;
-        rdfs:range      :OriginalThickness;
-        skos:preflabel  "hasOriginalThickness"@en .
+:hasForceMeasuringSystem
+        rdf:type      rdf:Property , owl:DatatypeProperty;
+        rdfs:label    "has ForceMeasuringSystem";
+        rdfs:seeAlso  :ForceMeasuringSystem , :hasForceMeasuringSystem_Object .
 
 :hasYieldStress_MegaPA
         rdf:type       rdf:Property , owl:DatatypeProperty;
@@ -1185,6 +1389,12 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
         rdfs:seeAlso   :YieldStress , :hasYieldStress_Object;
         :hasUnit       <https://qudt.org/vocab/unit/MegaPA>;
         :hasUnitLabel  "MPa" .
+
+<https://w3id.org/steel/ProcessOntology/hasProject%20Name_Object>
+        rdf:type        owl:ObjectProperty , rdf:Property;
+        rdfs:label      "hasProject Name"@en;
+        rdfs:range      <https://w3id.org/steel/ProcessOntology/Project%20Name>;
+        skos:preflabel  "hasProject Name"@en .
 
 :hasPercentageReductionOfArea_Object
         rdf:type        owl:ObjectProperty , rdf:Property;
@@ -1202,6 +1412,12 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
         :hasDescriptionCitationSource  "Authors"@en;
         :hasExampleData                "HG-Kamera \"Photron\" Cam. 1";
         :hasLabelSource                "YS1-Fz-D1Q"@de .
+
+:hasMaterial-steel-concrete-R_Object
+        rdf:type        owl:ObjectProperty , rdf:Property;
+        rdfs:label      "hasMaterial-steel-concrete-R"@en;
+        rdfs:range      :Material-steel-concrete-R;
+        skos:preflabel  "hasMaterial-steel-concrete-R"@en .
 
 :hasMatPiecewiseLinearPlasticityLogInterpolation
         rdf:type      rdf:Property , owl:DatatypeProperty;
@@ -1239,6 +1455,14 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
         rdfs:range      :Machine;
         skos:preflabel  "hasMachine"@en .
 
+:Loadcell  rdf:type           skos:Concept , owl:Class;
+        rdfs:label            "Loadcell"@en;
+        rdfs:subClassOf       pmdco:ValueObject;
+        skos:altlabel         "Kraftmessdose"@de , "load cell"@en;
+        skos:preflabel        "Loadcell"@en;
+        :hasTypicalUnit       qudtUnit:N;
+        :hasTypicalUnitLabel  "N" .
+
 :hasSampleIdentifier_Object
         rdf:type        owl:ObjectProperty , rdf:Property;
         rdfs:label      "hasSampleIdentifier"@en;
@@ -1258,6 +1482,12 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
         rdfs:seeAlso   :OriginalCrosssection , :hasOriginalCrosssection_Object;
         :hasUnit       qudtUnit:MilliM2;
         :hasUnitLabel  "mm2" .
+
+:hasYieldStrength_0_2_percentil_Object
+        rdf:type        owl:ObjectProperty , rdf:Property;
+        rdfs:label      "hasYieldStrength_0_2_percentil"@en;
+        rdfs:range      :YieldStrength_0_2_percentil;
+        skos:preflabel  "hasYieldStrength_0_2_percentil"@en .
 
 :hasTestTemperatur_Object
         rdf:type        owl:ObjectProperty , rdf:Property;
@@ -1279,6 +1509,14 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
         :hasDescriptionCitationSource  "Authors"@en;
         :hasExampleData                "Flach-Zug";
         :hasLabelSource                "YS1-Fz-D1Q"@de .
+
+:Project_Name  rdf:type  skos:Concept , owl:Class;
+        rdfs:label       "Project_Name"@en;
+        rdfs:seeAlso     :Project_Number;
+        rdfs:subClassOf  pmdco:ValueObject;
+        skos:altlabel    "Projektname"@de;
+        skos:preflabel   "Project_Name"@en;
+        skos:related     :Project_Number .
 
 :StrainRateScaleIdendifier
         rdf:type              skos:Concept , owl:Class;
@@ -1330,12 +1568,18 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
         dc:description       "Ontology description EN"@en;
         dcterms:contributor  " Author 2" , "Author 1";
         dcterms:created      "2023-06-01";
-        dcterms:date         "2024-04-25T11:40:43+00:00";
+        dcterms:date         "2024-04-25T11:53:32+00:00";
         dcterms:license      <https://creativecommons.org/licenses/by/4.0/>;
         dcterms:rights       "CC-BY xlsx2owl";
         owl:versionInfo      "2.0"@en;
         skos:prefLabel       "CI Mock FIle"@en;
         foaf:depiction       "https://w3id.org/steel/ProcessOntology/graph.png" .
+
+:hasMaterial_Edelstahl_1.4307_Object
+        rdf:type        owl:ObjectProperty , rdf:Property;
+        rdfs:label      "hasMaterial_Edelstahl_1.4307"@en;
+        rdfs:range      :Material_Edelstahl_1.4307;
+        skos:preflabel  "hasMaterial_Edelstahl_1.4307"@en .
 
 :hasPercentageReductionOfArea_PERCENT
         rdf:type       rdf:Property , owl:DatatypeProperty;
@@ -1343,6 +1587,21 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
         rdfs:seeAlso   :PercentageReductionOfArea , :hasPercentageReductionOfArea_Object;
         :hasUnit       qudtUnit:PERCENT;
         :hasUnitLabel  "%" .
+
+:hasProject_Number_Object
+        rdf:type        owl:ObjectProperty , rdf:Property;
+        rdfs:label      "hasProject_Number"@en;
+        rdfs:range      :Project_Number;
+        skos:preflabel  "hasProject_Number"@en .
+
+:Schaftfestigkeit_FBSIID6_GVZ
+        rdf:type         skos:Concept , owl:Class;
+        rdfs:label       "Schaftfestigkeit_FBSIID6_GVZ"@en;
+        rdfs:seeAlso     :Schaftdurchmesser_FBSIID6;
+        rdfs:subClassOf  pmdco:ValueObject;
+        skos:altlabel    "shaftstrength"@en , "Schaftfestigkeit"@de;
+        skos:preflabel   "Schaftfestigkeit_FBSIID6_GVZ"@en;
+        skos:related     :Schaftdurchmesser_FBSIID6 .
 
 :ConceptC  rdf:type     owl:Class;
         rdfs:comment    "ConceptC Description EN"@en;

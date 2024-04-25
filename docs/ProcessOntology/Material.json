@@ -26,6 +26,12 @@
       
       ],
     "http://www.w3.org/2004/02/skos/core#altlabel" : [ {
+        "value" : "Material",
+        "lang" : "en",
+        "type" : "literal"
+        }
+      ,
+      {
         "value" : "Werkstoff",
         "lang" : "de",
         "type" : "literal"

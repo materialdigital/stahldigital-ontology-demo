@@ -1,0 +1,5 @@
+<https://w3id.org/steel/ProcessOntology/hasSchaftfestigkeit_FBSIID6_GVZ> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<https://w3id.org/steel/ProcessOntology/hasSchaftfestigkeit_FBSIID6_GVZ> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/steel/ProcessOntology/hasSchaftfestigkeit_FBSIID6_GVZ> <http://www.w3.org/2000/01/rdf-schema#label> "has Schaftfestigkeit_FBSIID6_GVZ" .
+<https://w3id.org/steel/ProcessOntology/hasSchaftfestigkeit_FBSIID6_GVZ> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://w3id.org/steel/ProcessOntology/Schaftfestigkeit_FBSIID6_GVZ> .
+<https://w3id.org/steel/ProcessOntology/hasSchaftfestigkeit_FBSIID6_GVZ> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://w3id.org/steel/ProcessOntology/hasSchaftfestigkeit_FBSIID6_GVZ_Object> .

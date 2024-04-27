@@ -1321,7 +1321,7 @@ PREFIX dc: <http://purl.org/dc/elements/1.1/>
 :hasForceMeasuringSystem_Object rdfs:label "hasForceMeasuringSystem"@en .
 :hasForceMeasuringSystem_Object rdfs:range :ForceMeasuringSystem .
 :hasForceMeasuringSystem_Object skos:preflabel "hasForceMeasuringSystem"@en .
-:Machine rdf:type skos:Concept .
+:Machine rdf:type owl:Class .
 :Machine rdfs:label "Machine"@en .
 :Machine rdfs:subClassOf pmdco:ValueObject .
 :Machine dcterms:description "\"Data of the machine used for the experiment.\" [Authors]"@en .
@@ -1331,7 +1331,7 @@ PREFIX dc: <http://purl.org/dc/elements/1.1/>
 :Machine :hasDescriptionCitationSource "Authors"@en .
 :Machine :hasExampleData "SZM100" .
 :Machine :hasLabelSource "YS1-Fz-D1Q"@de .
-:Machine rdf:type owl:Class .
+:Machine rdf:type skos:Concept .
 :YoungsModulus rdf:type owl:Class .
 :YoungsModulus rdfs:label "YoungsModulus"@en .
 :YoungsModulus rdfs:subClassOf pmdco:ValueObject .
@@ -1562,7 +1562,7 @@ PREFIX dc: <http://purl.org/dc/elements/1.1/>
 <https://w3id.org/steel/ProcessOntology> dcterms:contributor " Author 2" .
 <https://w3id.org/steel/ProcessOntology> dcterms:contributor "Author 1" .
 <https://w3id.org/steel/ProcessOntology> dcterms:created "2023-06-01" .
-<https://w3id.org/steel/ProcessOntology> dcterms:date "2024-04-27T15:34:19+00:00" .
+<https://w3id.org/steel/ProcessOntology> dcterms:date "2024-04-27T16:04:39+00:00" .
 <https://w3id.org/steel/ProcessOntology> dcterms:license <https://creativecommons.org/licenses/by/4.0/> .
 <https://w3id.org/steel/ProcessOntology> dcterms:rights "CC-BY xlsx2owl" .
 <https://w3id.org/steel/ProcessOntology> owl:versionInfo "2.0"@en .

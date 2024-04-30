@@ -1602,7 +1602,7 @@ PREFIX dc: <http://purl.org/dc/elements/1.1/>
         rdfs:range      :ForceMeasuringSystem ;
         skos:preflabel  "hasForceMeasuringSystem"@en .
 
-:Machine  rdf:type                     owl:Class ;
+:Machine  rdf:type                     skos:Concept ;
         rdfs:label                     "Machine"@en ;
         rdfs:subClassOf                pmdco:ValueObject ;
         dcterms:description            "\"Data of the machine used for the experiment.\" [Authors]"@en ;
@@ -1612,7 +1612,7 @@ PREFIX dc: <http://purl.org/dc/elements/1.1/>
         :hasDescriptionCitationSource  "Authors"@en ;
         :hasExampleData                "SZM100" ;
         :hasLabelSource                "YS1-Fz-D1Q"@de ;
-        rdf:type                       skos:Concept .
+        rdf:type                       owl:Class .
 
 :YoungsModulus  rdf:type      owl:Class ;
         rdfs:label            "YoungsModulus"@en ;
@@ -1895,7 +1895,7 @@ PREFIX dc: <http://purl.org/dc/elements/1.1/>
         dcterms:contributor  " Author 2" ;
         dcterms:contributor  "Author 1" ;
         dcterms:created      "2023-06-01" ;
-        dcterms:date         "2024-04-30T01:04:19+00:00" ;
+        dcterms:date         "2024-04-30T01:34:18+00:00" ;
         dcterms:license      <https://creativecommons.org/licenses/by/4.0/> ;
         dcterms:rights       "CC-BY xlsx2owl" ;
         owl:versionInfo      "2.0"@en ;

@@ -1321,7 +1321,7 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
         rdfs:range      :ForceMeasuringSystem;
         skos:preflabel  "hasForceMeasuringSystem"@en .
 
-:Machine  rdf:type                     skos:Concept , owl:Class;
+:Machine  rdf:type                     owl:Class , skos:Concept;
         rdfs:label                     "Machine"@en;
         rdfs:subClassOf                pmdco:ValueObject;
         dcterms:description            "\"Data of the machine used for the experiment.\" [Authors]"@en;
@@ -1568,7 +1568,7 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
         dc:description       "Ontology description EN"@en;
         dcterms:contributor  " Author 2" , "Author 1";
         dcterms:created      "2023-06-01";
-        dcterms:date         "2024-05-01T02:04:11+00:00";
+        dcterms:date         "2024-05-01T02:34:07+00:00";
         dcterms:license      <https://creativecommons.org/licenses/by/4.0/>;
         dcterms:rights       "CC-BY xlsx2owl";
         owl:versionInfo      "2.0"@en;

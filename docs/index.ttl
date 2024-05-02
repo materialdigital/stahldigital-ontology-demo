@@ -1550,7 +1550,7 @@ spo:hasModulusOfElasticity_MegaPA spo:hasUnitLabel "MPa" .
 <https://w3id.org/steel/ProcessOntology> dcterms:contributor " Author 2" .
 <https://w3id.org/steel/ProcessOntology> dcterms:contributor "Author 1" .
 <https://w3id.org/steel/ProcessOntology> dcterms:created "2023-06-01" .
-<https://w3id.org/steel/ProcessOntology> dcterms:date "2024-05-02T12:34:14+00:00" .
+<https://w3id.org/steel/ProcessOntology> dcterms:date "2024-05-02T13:04:06+00:00" .
 <https://w3id.org/steel/ProcessOntology> dcterms:license <https://creativecommons.org/licenses/by/4.0/> .
 <https://w3id.org/steel/ProcessOntology> dcterms:rights "CC-BY xlsx2owl" .
 <https://w3id.org/steel/ProcessOntology> owl:versionInfo "2.0"@en .

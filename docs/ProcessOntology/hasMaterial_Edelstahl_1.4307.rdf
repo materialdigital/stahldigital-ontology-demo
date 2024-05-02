@@ -10,7 +10,7 @@
     <ns0:label xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#">has Material_Edelstahl_1.4307</ns0:label>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/hasMaterial_Edelstahl_1.4307">
-    <ns0:seeAlso xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="https://w3id.org/steel/ProcessOntology/Material_Edelstahl_1.4307"/>
+    <ns0:seeAlso xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="https://materialdigital.github.io/stahldigital-ontology-demo/Material_Edelstahl_1.4307"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/hasMaterial_Edelstahl_1.4307">
     <ns0:seeAlso xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="https://w3id.org/steel/ProcessOntology/hasMaterial_Edelstahl_1.4307_Object"/>

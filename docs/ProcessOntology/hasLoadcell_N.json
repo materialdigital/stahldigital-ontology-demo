@@ -19,7 +19,7 @@
       
       ],
     "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
-        "value" : "https://w3id.org/steel/ProcessOntology/Loadcell",
+        "value" : "https://materialdigital.github.io/stahldigital-ontology-demo/Loadcell",
         "type" : "uri"
         }
       ,

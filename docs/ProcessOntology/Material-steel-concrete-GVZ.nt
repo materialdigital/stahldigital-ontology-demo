@@ -1,9 +1,0 @@
-<https://w3id.org/steel/ProcessOntology/Material-steel-concrete-GVZ> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/steel/ProcessOntology/Material-steel-concrete-GVZ> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<https://w3id.org/steel/ProcessOntology/Material-steel-concrete-GVZ> <http://www.w3.org/2000/01/rdf-schema#label> "Material-steel-concrete-GVZ"@en .
-<https://w3id.org/steel/ProcessOntology/Material-steel-concrete-GVZ> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://w3id.org/steel/ProcessOntology/Schaftfestigkeit_FBSIID6_GVZ> .
-<https://w3id.org/steel/ProcessOntology/Material-steel-concrete-GVZ> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://material-digital.de/pmdco/ValueObject> .
-<https://w3id.org/steel/ProcessOntology/Material-steel-concrete-GVZ> <http://www.w3.org/2004/02/skos/core#altlabel> "steel material for concrete fastening"@en .
-<https://w3id.org/steel/ProcessOntology/Material-steel-concrete-GVZ> <http://www.w3.org/2004/02/skos/core#preflabel> "Material-steel-concrete-GVZ"@en .
-<https://w3id.org/steel/ProcessOntology/Material-steel-concrete-GVZ> <http://www.w3.org/2004/02/skos/core#related> <https://w3id.org/steel/ProcessOntology/Schaftfestigkeit_FBSIID6_GVZ> .
-<https://w3id.org/steel/ProcessOntology/Material-steel-concrete-GVZ> <https://w3id.org/steel/ProcessOntology/hasExampleData> "C15" .

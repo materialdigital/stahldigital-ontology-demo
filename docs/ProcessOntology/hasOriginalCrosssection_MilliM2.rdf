@@ -10,7 +10,7 @@
     <ns0:label xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#">has OriginalCrosssection</ns0:label>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/hasOriginalCrosssection_MilliM2">
-    <ns0:seeAlso xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="https://w3id.org/steel/ProcessOntology/OriginalCrosssection"/>
+    <ns0:seeAlso xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="https://materialdigital.github.io/stahldigital-ontology-demo/OriginalCrosssection"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/hasOriginalCrosssection_MilliM2">
     <ns0:seeAlso xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="https://w3id.org/steel/ProcessOntology/hasOriginalCrosssection_Object"/>

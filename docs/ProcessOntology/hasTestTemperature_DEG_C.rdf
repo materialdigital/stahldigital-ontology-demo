@@ -10,7 +10,7 @@
     <ns0:label xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#">has TestTemperature</ns0:label>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/hasTestTemperature_DEG_C">
-    <ns0:seeAlso xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="https://w3id.org/steel/ProcessOntology/TestTemperature"/>
+    <ns0:seeAlso xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="https://materialdigital.github.io/stahldigital-ontology-demo/TestTemperature"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/hasTestTemperature_DEG_C">
     <ns0:seeAlso xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="https://w3id.org/steel/ProcessOntology/hasTestTemperature_Object"/>

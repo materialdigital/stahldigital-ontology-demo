@@ -10,7 +10,7 @@
     <ns0:label xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#">has MassDensity</ns0:label>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/hasMassDensity_GM-PER-CentiM3">
-    <ns0:seeAlso xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="https://w3id.org/steel/ProcessOntology/MassDensity"/>
+    <ns0:seeAlso xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="https://materialdigital.github.io/stahldigital-ontology-demo/MassDensity"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/hasMassDensity_GM-PER-CentiM3">
     <ns0:seeAlso xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="https://w3id.org/steel/ProcessOntology/hasMassDensity_Object"/>

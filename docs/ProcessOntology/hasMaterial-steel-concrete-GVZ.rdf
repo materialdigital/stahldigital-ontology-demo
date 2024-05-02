@@ -10,7 +10,7 @@
     <ns0:label xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#">has Material-steel-concrete-GVZ</ns0:label>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/hasMaterial-steel-concrete-GVZ">
-    <ns0:seeAlso xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="https://w3id.org/steel/ProcessOntology/Material-steel-concrete-GVZ"/>
+    <ns0:seeAlso xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="https://materialdigital.github.io/stahldigital-ontology-demo/Material-steel-concrete-GVZ"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/hasMaterial-steel-concrete-GVZ">
     <ns0:seeAlso xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="https://w3id.org/steel/ProcessOntology/hasMaterial-steel-concrete-GVZ_Object"/>

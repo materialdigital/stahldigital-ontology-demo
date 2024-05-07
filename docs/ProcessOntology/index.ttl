@@ -57,17 +57,17 @@ spo:hasSampleIdentifier rdfs:seeAlso spo:hasSampleIdentifier_Object .
 :TestTemperatur spo:hasExampleData "RT" .
 :TestTemperatur spo:hasLabelSource "YS1-Fz-D1Q"@de .
 :TestTemperatur rdf:type owl:Class .
+:hasForce_Object rdf:type owl:ObjectProperty .
+:hasForce_Object rdf:type rdf:Property .
+:hasForce_Object rdfs:label "hasForce"@en .
+:hasForce_Object rdfs:range :Force .
+:hasForce_Object skos:preflabel "hasForce"@en .
 spo:attributeB rdf:type owl:DatatypeProperty .
 spo:attributeB rdfs:domain spo:ConceptB .
 spo:attributeB rdfs:label "attributeB Label EN"@en .
 spo:attributeB rdfs:range xsd:string .
 spo:attributeB dc:description "attributeB Description EN"@en .
 spo:attributeB skos:preflabel "attributeB Label EN"@en .
-:hasForce_Object rdf:type owl:ObjectProperty .
-:hasForce_Object rdf:type rdf:Property .
-:hasForce_Object rdfs:label "hasForce"@en .
-:hasForce_Object rdfs:range :Force .
-:hasForce_Object skos:preflabel "hasForce"@en .
 :NominalEngineeringStrainRate spo:isBasedOn :InitialDisplacementRate .
 :NominalEngineeringStrainRate spo:isBasedOn :ParallelLength .
 :NominalEngineeringStrainRate rdf:type skos:Concept .
@@ -223,6 +223,13 @@ spo:hasPercentagePlasticExtensionAtMaximumForce_PERCENT spo:hasUnitLabel "%" .
 :hasSpecWeight_Object rdfs:label "hasSpecWeight"@en .
 :hasSpecWeight_Object rdfs:range :SpecWeight .
 :hasSpecWeight_Object skos:preflabel "hasSpecWeight"@en .
+spo:hasMinimumCrosssectionAfterFracture_MilliM2 rdf:type rdf:Property .
+spo:hasMinimumCrosssectionAfterFracture_MilliM2 rdf:type owl:DatatypeProperty .
+spo:hasMinimumCrosssectionAfterFracture_MilliM2 rdfs:label "has MinimumCrosssectionAfterFracture" .
+spo:hasMinimumCrosssectionAfterFracture_MilliM2 rdfs:seeAlso :MinimumCrosssectionAfterFracture .
+spo:hasMinimumCrosssectionAfterFracture_MilliM2 rdfs:seeAlso spo:hasMinimumCrosssectionAfterFracture_Object .
+spo:hasMinimumCrosssectionAfterFracture_MilliM2 spo:hasUnit qudtUnit:MilliM2 .
+spo:hasMinimumCrosssectionAfterFracture_MilliM2 spo:hasUnitLabel "mm2" .
 :YieldingIdentifier rdf:type owl:Class .
 :YieldingIdentifier rdfs:label "YieldingIdentifier"@en .
 :YieldingIdentifier rdfs:subClassOf pmdco:ValueObject .
@@ -233,13 +240,6 @@ spo:hasPercentagePlasticExtensionAtMaximumForce_PERCENT spo:hasUnitLabel "%" .
 :YieldingIdentifier spo:hasLabelSource "LS-DYNA_Manual_Volume_2"@en .
 :YieldingIdentifier rdf:type skos:Concept .
 :YieldingIdentifier spo:hasTypicalUnitLabel "-" .
-spo:hasMinimumCrosssectionAfterFracture_MilliM2 rdf:type rdf:Property .
-spo:hasMinimumCrosssectionAfterFracture_MilliM2 rdf:type owl:DatatypeProperty .
-spo:hasMinimumCrosssectionAfterFracture_MilliM2 rdfs:label "has MinimumCrosssectionAfterFracture" .
-spo:hasMinimumCrosssectionAfterFracture_MilliM2 rdfs:seeAlso :MinimumCrosssectionAfterFracture .
-spo:hasMinimumCrosssectionAfterFracture_MilliM2 rdfs:seeAlso spo:hasMinimumCrosssectionAfterFracture_Object .
-spo:hasMinimumCrosssectionAfterFracture_MilliM2 spo:hasUnit qudtUnit:MilliM2 .
-spo:hasMinimumCrosssectionAfterFracture_MilliM2 spo:hasUnitLabel "mm2" .
 :ExtensionMeasuringSystem rdf:type skos:Concept .
 :ExtensionMeasuringSystem rdfs:label "ExtensionMeasuringSystem"@en .
 :ExtensionMeasuringSystem rdfs:subClassOf pmdco:ValueObject .
@@ -416,6 +416,11 @@ spo:ConceptA skos:altlabel "ConceptA Synonym EN"@en .
 spo:ConceptA skos:altlabel "ConceptA Synonym EN"@de .
 spo:ConceptA skos:preflabel "ConceptA Label EN"@en .
 spo:ConceptA skos:preflabel "ConceptA Label DE"@de .
+:hasProjectName_Object rdf:type owl:ObjectProperty .
+:hasProjectName_Object rdf:type rdf:Property .
+:hasProjectName_Object rdfs:label "hasProjectName"@en .
+:hasProjectName_Object rdfs:range :ProjectName .
+:hasProjectName_Object skos:preflabel "hasProjectName"@en .
 :Extension spo:hasLabelSource "YS1-Fz-D1Q"@de .
 :Extension spo:hasExampleData "0.026" .
 :Extension spo:hasTypicalUnitLabel "mm" .
@@ -434,6 +439,13 @@ spo:ConceptA skos:preflabel "ConceptA Label DE"@de .
 :Extension skos:related :ExtensionMeasuringSystem .
 :Extension skos:related :ExtensometerGaugeLength .
 :Extension spo:hasDescriptionCitationSource "Authors"@en .
+spo:hasOriginalWidth_MilliM rdf:type rdf:Property .
+spo:hasOriginalWidth_MilliM rdf:type owl:DatatypeProperty .
+spo:hasOriginalWidth_MilliM rdfs:label "has OriginalWidth" .
+spo:hasOriginalWidth_MilliM rdfs:seeAlso :OriginalWidth .
+spo:hasOriginalWidth_MilliM rdfs:seeAlso spo:hasOriginalWidth_Object .
+spo:hasOriginalWidth_MilliM spo:hasUnit qudtUnit:MilliM .
+spo:hasOriginalWidth_MilliM spo:hasUnitLabel "mm" .
 :TimeDependentEngineeringStrainRate spo:isBasedOn :ExtensometerGaugeLength .
 :TimeDependentEngineeringStrainRate spo:hasTypicalUnitLabel "s-1" .
 :TimeDependentEngineeringStrainRate spo:isBasedOn :Time .
@@ -451,18 +463,6 @@ spo:ConceptA skos:preflabel "ConceptA Label DE"@de .
 :TimeDependentEngineeringStrainRate spo:hasExampleData "0.019" .
 :TimeDependentEngineeringStrainRate spo:hasLabelSource "YS1-Fz-D1Q"@de .
 :TimeDependentEngineeringStrainRate spo:hasTypicalUnit qudtUnit:PER-SEC .
-spo:hasOriginalWidth_MilliM rdf:type rdf:Property .
-spo:hasOriginalWidth_MilliM rdf:type owl:DatatypeProperty .
-spo:hasOriginalWidth_MilliM rdfs:label "has OriginalWidth" .
-spo:hasOriginalWidth_MilliM rdfs:seeAlso :OriginalWidth .
-spo:hasOriginalWidth_MilliM rdfs:seeAlso spo:hasOriginalWidth_Object .
-spo:hasOriginalWidth_MilliM spo:hasUnit qudtUnit:MilliM .
-spo:hasOriginalWidth_MilliM spo:hasUnitLabel "mm" .
-:hasProjectName_Object rdf:type owl:ObjectProperty .
-:hasProjectName_Object rdf:type rdf:Property .
-:hasProjectName_Object rdfs:label "hasProjectName"@en .
-:hasProjectName_Object rdfs:range :ProjectName .
-:hasProjectName_Object skos:preflabel "hasProjectName"@en .
 spo:hasSchaftfestigkeit_FBSIID6_R_MegaPA rdf:type rdf:Property .
 spo:hasSchaftfestigkeit_FBSIID6_R_MegaPA rdf:type owl:DatatypeProperty .
 spo:hasSchaftfestigkeit_FBSIID6_R_MegaPA rdfs:label "has Schaftfestigkeit_FBSIID6_R" .
@@ -491,6 +491,13 @@ spo:hasSchaftfestigkeit_FBSIID6_R_MegaPA spo:hasUnitLabel "MPa" .
 :Tester skos:preflabel "Tester"@en .
 :Tester spo:hasLabelSource "YS1-Fz-D1Q"@de .
 :Tester rdf:type owl:Class .
+spo:hasExtensometerGaugeLength_MilliM rdf:type rdf:Property .
+spo:hasExtensometerGaugeLength_MilliM rdf:type owl:DatatypeProperty .
+spo:hasExtensometerGaugeLength_MilliM rdfs:label "has ExtensometerGaugeLength" .
+spo:hasExtensometerGaugeLength_MilliM rdfs:seeAlso :ExtensometerGaugeLength .
+spo:hasExtensometerGaugeLength_MilliM rdfs:seeAlso spo:hasExtensometerGaugeLength_Object .
+spo:hasExtensometerGaugeLength_MilliM spo:hasUnit qudtUnit:MilliM .
+spo:hasExtensometerGaugeLength_MilliM spo:hasUnitLabel "mm" .
 :YoungsModulus rdf:type skos:Concept .
 :YoungsModulus rdfs:label "YoungsModulus"@en .
 :YoungsModulus rdfs:subClassOf pmdco:ValueObject .
@@ -502,13 +509,6 @@ spo:hasSchaftfestigkeit_FBSIID6_R_MegaPA spo:hasUnitLabel "MPa" .
 :YoungsModulus rdf:type owl:Class .
 :YoungsModulus spo:hasTypicalUnit <https://qudt.org/vocab/unit/MegaPA> .
 :YoungsModulus spo:hasTypicalUnitLabel "MPa" .
-spo:hasExtensometerGaugeLength_MilliM rdf:type rdf:Property .
-spo:hasExtensometerGaugeLength_MilliM rdf:type owl:DatatypeProperty .
-spo:hasExtensometerGaugeLength_MilliM rdfs:label "has ExtensometerGaugeLength" .
-spo:hasExtensometerGaugeLength_MilliM rdfs:seeAlso :ExtensometerGaugeLength .
-spo:hasExtensometerGaugeLength_MilliM rdfs:seeAlso spo:hasExtensometerGaugeLength_Object .
-spo:hasExtensometerGaugeLength_MilliM spo:hasUnit qudtUnit:MilliM .
-spo:hasExtensometerGaugeLength_MilliM spo:hasUnitLabel "mm" .
 :StrainRateScaleParameterC rdf:type owl:Class .
 :StrainRateScaleParameterC rdfs:label "StrainRateScaleParameterC"@en .
 :StrainRateScaleParameterC rdfs:subClassOf pmdco:ValueObject .
@@ -540,10 +540,6 @@ spo:hasExtensometerGaugeLength_MilliM spo:hasUnitLabel "mm" .
 :TrueStressAtFracture spo:hasSymbol "Sig_{w Bruch}"@en .
 :TrueStressAtFracture spo:hasTypicalUnit qudtUnit:MegaPA .
 :TrueStressAtFracture spo:hasTypicalUnitLabel "MPa" .
-:hasStrainRateFormulationFlag_Object rdf:type owl:ObjectProperty .
-:hasStrainRateFormulationFlag_Object rdfs:label "hasStrainRateFormulationFlag"@en .
-:hasStrainRateFormulationFlag_Object rdfs:range :StrainRateFormulationFlag .
-:hasStrainRateFormulationFlag_Object skos:preflabel "hasStrainRateFormulationFlag"@en .
 <https://materialdigital.github.io/stahldigital-ontology-demo/Project%20Name> rdf:type skos:Concept .
 <https://materialdigital.github.io/stahldigital-ontology-demo/Project%20Name> rdfs:label "Project Name"@en .
 <https://materialdigital.github.io/stahldigital-ontology-demo/Project%20Name> rdfs:subClassOf pmdco:ValueObject .
@@ -561,6 +557,10 @@ spo:hasExtensometerGaugeLength_MilliM spo:hasUnitLabel "mm" .
 :MaterialIdentifier spo:hasLabelSource "LS-DYNA_Manual_Volume_2"@en .
 :MaterialIdentifier rdf:type owl:Class .
 :MaterialIdentifier spo:hasTypicalUnitLabel "-" .
+:hasStrainRateFormulationFlag_Object rdf:type owl:ObjectProperty .
+:hasStrainRateFormulationFlag_Object rdfs:label "hasStrainRateFormulationFlag"@en .
+:hasStrainRateFormulationFlag_Object rdfs:range :StrainRateFormulationFlag .
+:hasStrainRateFormulationFlag_Object skos:preflabel "hasStrainRateFormulationFlag"@en .
 spo:hasMaterial-steel-concrete-R rdf:type rdf:Property .
 spo:hasMaterial-steel-concrete-R rdf:type owl:DatatypeProperty .
 spo:hasMaterial-steel-concrete-R rdfs:label "has Material-steel-concrete-R" .
@@ -621,21 +621,21 @@ spo:hasTruePlasticStrainAtFracture_PERCENT rdfs:seeAlso :TruePlasticStrainAtFrac
 spo:hasTruePlasticStrainAtFracture_PERCENT rdfs:seeAlso spo:hasTruePlasticStrainAtFracture_Object .
 spo:hasTruePlasticStrainAtFracture_PERCENT spo:hasUnit qudtUnit:PERCENT .
 spo:hasTruePlasticStrainAtFracture_PERCENT spo:hasUnitLabel "%" .
-:hasInitialDisplacementRate_Object rdf:type owl:ObjectProperty .
-:hasInitialDisplacementRate_Object rdf:type rdf:Property .
-:hasInitialDisplacementRate_Object rdfs:label "hasInitialDisplacementRate"@en .
-:hasInitialDisplacementRate_Object rdfs:range :InitialDisplacementRate .
-:hasInitialDisplacementRate_Object skos:preflabel "hasInitialDisplacementRate"@en .
-spo:hasProjectName rdf:type rdf:Property .
-spo:hasProjectName rdf:type owl:DatatypeProperty .
-spo:hasProjectName rdfs:label "has ProjectName" .
-spo:hasProjectName rdfs:seeAlso :ProjectName .
-spo:hasProjectName rdfs:seeAlso spo:hasProjectName_Object .
 :hasOriginalThickness_Object rdf:type owl:ObjectProperty .
 :hasOriginalThickness_Object rdf:type rdf:Property .
 :hasOriginalThickness_Object rdfs:label "hasOriginalThickness"@en .
 :hasOriginalThickness_Object rdfs:range :OriginalThickness .
 :hasOriginalThickness_Object skos:preflabel "hasOriginalThickness"@en .
+spo:hasProjectName rdf:type rdf:Property .
+spo:hasProjectName rdf:type owl:DatatypeProperty .
+spo:hasProjectName rdfs:label "has ProjectName" .
+spo:hasProjectName rdfs:seeAlso :ProjectName .
+spo:hasProjectName rdfs:seeAlso spo:hasProjectName_Object .
+:hasInitialDisplacementRate_Object rdf:type owl:ObjectProperty .
+:hasInitialDisplacementRate_Object rdf:type rdf:Property .
+:hasInitialDisplacementRate_Object rdfs:label "hasInitialDisplacementRate"@en .
+:hasInitialDisplacementRate_Object rdfs:range :InitialDisplacementRate .
+:hasInitialDisplacementRate_Object skos:preflabel "hasInitialDisplacementRate"@en .
 :CharacteristicEngineeringStrainRate spo:hasTypicalUnitLabel "s-1" .
 :CharacteristicEngineeringStrainRate spo:hasTypicalUnit qudtUnit:PER-SEC .
 :CharacteristicEngineeringStrainRate spo:hasLabelSource "YS1-Fz-D1Q"@de .
@@ -655,10 +655,11 @@ spo:hasProjectName rdfs:seeAlso spo:hasProjectName_Object .
 :CharacteristicEngineeringStrainRate skos:related :StrainRate .
 :CharacteristicEngineeringStrainRate spo:hasDescriptionCitationSource "Authors"@en .
 :CharacteristicEngineeringStrainRate spo:hasExampleData "0.8" .
-:hasMassDensity_Object rdf:type owl:ObjectProperty .
-:hasMassDensity_Object rdfs:label "hasMassDensity"@en .
-:hasMassDensity_Object rdfs:range :MassDensity .
-:hasMassDensity_Object skos:preflabel "hasMassDensity"@en .
+:hasFrameRate_Object rdf:type owl:ObjectProperty .
+:hasFrameRate_Object rdf:type rdf:Property .
+:hasFrameRate_Object rdfs:label "hasFrameRate"@en .
+:hasFrameRate_Object rdfs:range :FrameRate .
+:hasFrameRate_Object skos:preflabel "hasFrameRate"@en .
 spo:hasCharacteristicEngineeringStrainRate_PER-SEC rdf:type rdf:Property .
 spo:hasCharacteristicEngineeringStrainRate_PER-SEC rdf:type owl:DatatypeProperty .
 spo:hasCharacteristicEngineeringStrainRate_PER-SEC rdfs:label "has CharacteristicEngineeringStrainRate" .
@@ -666,11 +667,10 @@ spo:hasCharacteristicEngineeringStrainRate_PER-SEC rdfs:seeAlso :CharacteristicE
 spo:hasCharacteristicEngineeringStrainRate_PER-SEC rdfs:seeAlso spo:hasCharacteristicEngineeringStrainRate_Object .
 spo:hasCharacteristicEngineeringStrainRate_PER-SEC spo:hasUnit qudtUnit:PER-SEC .
 spo:hasCharacteristicEngineeringStrainRate_PER-SEC spo:hasUnitLabel "s-1" .
-:hasFrameRate_Object rdf:type owl:ObjectProperty .
-:hasFrameRate_Object rdf:type rdf:Property .
-:hasFrameRate_Object rdfs:label "hasFrameRate"@en .
-:hasFrameRate_Object rdfs:range :FrameRate .
-:hasFrameRate_Object skos:preflabel "hasFrameRate"@en .
+:hasMassDensity_Object rdf:type owl:ObjectProperty .
+:hasMassDensity_Object rdfs:label "hasMassDensity"@en .
+:hasMassDensity_Object rdfs:range :MassDensity .
+:hasMassDensity_Object skos:preflabel "hasMassDensity"@en .
 spo:hasTimeStamp rdf:type rdf:Property .
 spo:hasTimeStamp rdf:type owl:DatatypeProperty .
 spo:hasTimeStamp rdfs:label "has TimeStamp" .
@@ -905,8 +905,8 @@ spo:hasExtension_MilliM rdfs:seeAlso :Extension .
 spo:hasExtension_MilliM rdfs:seeAlso spo:hasExtension_Object .
 spo:hasExtension_MilliM spo:hasUnit qudtUnit:MilliM .
 spo:hasExtension_MilliM spo:hasUnitLabel "mm" .
-:TruePlasticStrainAtFracture spo:isBasedOn :MinimumCrosssectionAfterFracture .
 :TruePlasticStrainAtFracture spo:isBasedOn :OriginalCrosssection .
+:TruePlasticStrainAtFracture spo:isBasedOn :MinimumCrosssectionAfterFracture .
 :TruePlasticStrainAtFracture rdf:type owl:Class .
 :TruePlasticStrainAtFracture rdf:type skos:Concept .
 :TruePlasticStrainAtFracture rdfs:label "TruePlasticStrainAtFracture"@en .
@@ -1017,10 +1017,11 @@ spo:hasForce_KiloN spo:hasUnitLabel "kN" .
 :hasSchaftdurchmesser_FBSIID6_Object rdfs:label "hasSchaftdurchmesser_FBSIID6"@en .
 :hasSchaftdurchmesser_FBSIID6_Object rdfs:range :Schaftdurchmesser_FBSIID6 .
 :hasSchaftdurchmesser_FBSIID6_Object skos:preflabel "hasSchaftdurchmesser_FBSIID6"@en .
-:hasMinTimeStep4ElementDel_Object rdf:type owl:ObjectProperty .
-:hasMinTimeStep4ElementDel_Object rdfs:label "hasMinTimeStep4ElementDel"@en .
-:hasMinTimeStep4ElementDel_Object rdfs:range :MinTimeStep4ElementDel .
-:hasMinTimeStep4ElementDel_Object skos:preflabel "hasMinTimeStep4ElementDel"@en .
+:hasSchaftfestigkeit_FBSIID6_GVZ_Object rdf:type owl:ObjectProperty .
+:hasSchaftfestigkeit_FBSIID6_GVZ_Object rdf:type rdf:Property .
+:hasSchaftfestigkeit_FBSIID6_GVZ_Object rdfs:label "hasSchaftfestigkeit_FBSIID6_GVZ"@en .
+:hasSchaftfestigkeit_FBSIID6_GVZ_Object rdfs:range :Schaftfestigkeit_FBSIID6_GVZ .
+:hasSchaftfestigkeit_FBSIID6_GVZ_Object skos:preflabel "hasSchaftfestigkeit_FBSIID6_GVZ"@en .
 spo:hasLoadcell_N rdf:type rdf:Property .
 spo:hasLoadcell_N rdf:type owl:DatatypeProperty .
 spo:hasLoadcell_N rdfs:label "has Loadcell" .
@@ -1028,11 +1029,10 @@ spo:hasLoadcell_N rdfs:seeAlso :Loadcell .
 spo:hasLoadcell_N rdfs:seeAlso spo:hasLoadcell_Object .
 spo:hasLoadcell_N spo:hasUnit qudtUnit:N .
 spo:hasLoadcell_N spo:hasUnitLabel "N" .
-:hasSchaftfestigkeit_FBSIID6_GVZ_Object rdf:type owl:ObjectProperty .
-:hasSchaftfestigkeit_FBSIID6_GVZ_Object rdf:type rdf:Property .
-:hasSchaftfestigkeit_FBSIID6_GVZ_Object rdfs:label "hasSchaftfestigkeit_FBSIID6_GVZ"@en .
-:hasSchaftfestigkeit_FBSIID6_GVZ_Object rdfs:range :Schaftfestigkeit_FBSIID6_GVZ .
-:hasSchaftfestigkeit_FBSIID6_GVZ_Object skos:preflabel "hasSchaftfestigkeit_FBSIID6_GVZ"@en .
+:hasMinTimeStep4ElementDel_Object rdf:type owl:ObjectProperty .
+:hasMinTimeStep4ElementDel_Object rdfs:label "hasMinTimeStep4ElementDel"@en .
+:hasMinTimeStep4ElementDel_Object rdfs:range :MinTimeStep4ElementDel .
+:hasMinTimeStep4ElementDel_Object skos:preflabel "hasMinTimeStep4ElementDel"@en .
 spo:hasProject_Name rdf:type rdf:Property .
 spo:hasProject_Name rdf:type owl:DatatypeProperty .
 spo:hasProject_Name rdfs:label "has Project_Name" .
@@ -1067,8 +1067,6 @@ spo:hasProject_Name rdfs:seeAlso spo:hasProject_Name_Object .
 :TestTemperature spo:hasSymbol "T"@en .
 :TestTemperature spo:hasTypicalUnit qudtUnit:DEG_C .
 :TestTemperature spo:hasTypicalUnitLabel "°C" .
-spo:J-Per-Gm-K rdf:type qudt:Unit .
-spo:J-Per-Gm-K spo:hasUnitLabel "J/(g*K)" .
 :hasForceMeasuringSystem_Object rdf:type owl:ObjectProperty .
 :hasForceMeasuringSystem_Object rdf:type rdf:Property .
 :hasForceMeasuringSystem_Object rdfs:label "hasForceMeasuringSystem"@en .
@@ -1081,6 +1079,8 @@ spo:hasTestTemperature_DEG_C rdfs:seeAlso :TestTemperature .
 spo:hasTestTemperature_DEG_C rdfs:seeAlso spo:hasTestTemperature_Object .
 spo:hasTestTemperature_DEG_C spo:hasUnit qudtUnit:DEG_C .
 spo:hasTestTemperature_DEG_C spo:hasUnitLabel "°C" .
+spo:J-Per-Gm-K rdf:type qudt:Unit .
+spo:J-Per-Gm-K spo:hasUnitLabel "J/(g*K)" .
 :hasMatPiecewiseLinearPlasticity_Object rdf:type owl:ObjectProperty .
 :hasMatPiecewiseLinearPlasticity_Object rdfs:label "hasMatPiecewiseLinearPlasticity"@en .
 :hasMatPiecewiseLinearPlasticity_Object rdfs:range :MatPiecewiseLinearPlasticity .
@@ -1126,15 +1126,15 @@ spo:ConceptB skos:altlabel "ConceptB Synonym EN"@en .
 spo:ConceptB skos:altlabel "ConceptB Synonym EN"@de .
 spo:ConceptB skos:preflabel "ConceptB Label EN"@en .
 spo:ConceptB skos:preflabel "ConceptB Label DE"@de .
-:hasYieldStress_Object rdf:type owl:ObjectProperty .
-:hasYieldStress_Object rdfs:label "hasYieldStress"@en .
-:hasYieldStress_Object rdfs:range :YieldStress .
-:hasYieldStress_Object skos:preflabel "hasYieldStress"@en .
 spo:hasSchaftfestigkeit_FBSIID6_GVZ rdf:type rdf:Property .
 spo:hasSchaftfestigkeit_FBSIID6_GVZ rdf:type owl:DatatypeProperty .
 spo:hasSchaftfestigkeit_FBSIID6_GVZ rdfs:label "has Schaftfestigkeit_FBSIID6_GVZ" .
 spo:hasSchaftfestigkeit_FBSIID6_GVZ rdfs:seeAlso :Schaftfestigkeit_FBSIID6_GVZ .
 spo:hasSchaftfestigkeit_FBSIID6_GVZ rdfs:seeAlso spo:hasSchaftfestigkeit_FBSIID6_GVZ_Object .
+:hasYieldStress_Object rdf:type owl:ObjectProperty .
+:hasYieldStress_Object rdfs:label "hasYieldStress"@en .
+:hasYieldStress_Object rdfs:range :YieldStress .
+:hasYieldStress_Object skos:preflabel "hasYieldStress"@en .
 :TestingFacility rdfs:label "TestingFacility"@en .
 :TestingFacility rdfs:subClassOf pmdco:ValueObject .
 :TestingFacility skos:altlabel "testing facility"@en .
@@ -1305,10 +1305,6 @@ spo:hasTester rdfs:seeAlso spo:hasTester_Object .
 :hasYoungsModulus_Object rdfs:label "hasYoungsModulus"@en .
 :hasYoungsModulus_Object rdfs:range :YoungsModulus .
 :hasYoungsModulus_Object skos:preflabel "hasYoungsModulus"@en .
-:hasYieldingIdentifier_Object rdf:type owl:ObjectProperty .
-:hasYieldingIdentifier_Object rdfs:label "hasYieldingIdentifier"@en .
-:hasYieldingIdentifier_Object rdfs:range :YieldingIdentifier .
-:hasYieldingIdentifier_Object skos:preflabel "hasYieldingIdentifier"@en .
 :ProjectName rdf:type skos:Concept .
 :ProjectName rdfs:label "ProjectName"@en .
 :ProjectName rdfs:subClassOf pmdco:ValueObject .
@@ -1319,6 +1315,10 @@ spo:hasTester rdfs:seeAlso spo:hasTester_Object .
 :ProjectName spo:hasDescriptionCitationSource "Authors"@en .
 :ProjectName spo:hasLabelSource "YS1-Fz-D1Q"@de .
 :ProjectName rdf:type owl:Class .
+:hasYieldingIdentifier_Object rdf:type owl:ObjectProperty .
+:hasYieldingIdentifier_Object rdfs:label "hasYieldingIdentifier"@en .
+:hasYieldingIdentifier_Object rdfs:range :YieldingIdentifier .
+:hasYieldingIdentifier_Object skos:preflabel "hasYieldingIdentifier"@en .
 spo:hasProject_Number rdf:type rdf:Property .
 spo:hasProject_Number rdf:type owl:DatatypeProperty .
 spo:hasProject_Number rdfs:label "has Project_Number" .
@@ -1336,6 +1336,11 @@ spo:hasTestPieceLength_MilliM rdfs:seeAlso :TestPieceLength .
 spo:hasTestPieceLength_MilliM rdfs:seeAlso spo:hasTestPieceLength_Object .
 spo:hasTestPieceLength_MilliM spo:hasUnit qudtUnit:MilliM .
 spo:hasTestPieceLength_MilliM spo:hasUnitLabel "mm" .
+:hasTestPieceLength_Object rdf:type owl:ObjectProperty .
+:hasTestPieceLength_Object rdf:type rdf:Property .
+:hasTestPieceLength_Object rdfs:label "hasTestPieceLength"@en .
+:hasTestPieceLength_Object rdfs:range :TestPieceLength .
+:hasTestPieceLength_Object skos:preflabel "hasTestPieceLength"@en .
 spo:hasEngineeringStress_MegaPA rdf:type rdf:Property .
 spo:hasEngineeringStress_MegaPA rdf:type owl:DatatypeProperty .
 spo:hasEngineeringStress_MegaPA rdfs:label "has EngineeringStress" .
@@ -1343,11 +1348,6 @@ spo:hasEngineeringStress_MegaPA rdfs:seeAlso :EngineeringStress .
 spo:hasEngineeringStress_MegaPA rdfs:seeAlso spo:hasEngineeringStress_Object .
 spo:hasEngineeringStress_MegaPA spo:hasUnit qudtUnit:MegaPA .
 spo:hasEngineeringStress_MegaPA spo:hasUnitLabel "MPa" .
-:hasTestPieceLength_Object rdf:type owl:ObjectProperty .
-:hasTestPieceLength_Object rdf:type rdf:Property .
-:hasTestPieceLength_Object rdfs:label "hasTestPieceLength"@en .
-:hasTestPieceLength_Object rdfs:range :TestPieceLength .
-:hasTestPieceLength_Object skos:preflabel "hasTestPieceLength"@en .
 :hasTrueStressAtFracture_Object rdf:type owl:ObjectProperty .
 :hasTrueStressAtFracture_Object rdf:type rdf:Property .
 :hasTrueStressAtFracture_Object rdfs:label "hasTrueStressAtFracture"@en .
@@ -1432,13 +1432,11 @@ spo:relationA skos:preflabel "relationA Label EN"@en .
 :hasTimeDependentEngineeringStrainRate_Object rdfs:label "hasTimeDependentEngineeringStrainRate"@en .
 :hasTimeDependentEngineeringStrainRate_Object rdfs:range :TimeDependentEngineeringStrainRate .
 :hasTimeDependentEngineeringStrainRate_Object skos:preflabel "hasTimeDependentEngineeringStrainRate"@en .
-spo:hasYieldStress_MegaPA rdf:type rdf:Property .
-spo:hasYieldStress_MegaPA rdf:type owl:DatatypeProperty .
-spo:hasYieldStress_MegaPA rdfs:label "has YieldStress" .
-spo:hasYieldStress_MegaPA rdfs:seeAlso :YieldStress .
-spo:hasYieldStress_MegaPA rdfs:seeAlso spo:hasYieldStress_Object .
-spo:hasYieldStress_MegaPA spo:hasUnit <https://qudt.org/vocab/unit/MegaPA> .
-spo:hasYieldStress_MegaPA spo:hasUnitLabel "MPa" .
+spo:hasForceMeasuringSystem rdf:type rdf:Property .
+spo:hasForceMeasuringSystem rdf:type owl:DatatypeProperty .
+spo:hasForceMeasuringSystem rdfs:label "has ForceMeasuringSystem" .
+spo:hasForceMeasuringSystem rdfs:seeAlso :ForceMeasuringSystem .
+spo:hasForceMeasuringSystem rdfs:seeAlso spo:hasForceMeasuringSystem_Object .
 :OriginalThickness rdf:type skos:Concept .
 :OriginalThickness rdfs:label "OriginalThickness"@en .
 :OriginalThickness rdfs:subClassOf pmdco:ValueObject .
@@ -1453,16 +1451,13 @@ spo:hasYieldStress_MegaPA spo:hasUnitLabel "MPa" .
 :OriginalThickness spo:hasSymbol "a_{0}"@en .
 :OriginalThickness spo:hasTypicalUnit qudtUnit:MilliM .
 :OriginalThickness spo:hasTypicalUnitLabel "mm" .
-spo:hasForceMeasuringSystem rdf:type rdf:Property .
-spo:hasForceMeasuringSystem rdf:type owl:DatatypeProperty .
-spo:hasForceMeasuringSystem rdfs:label "has ForceMeasuringSystem" .
-spo:hasForceMeasuringSystem rdfs:seeAlso :ForceMeasuringSystem .
-spo:hasForceMeasuringSystem rdfs:seeAlso spo:hasForceMeasuringSystem_Object .
-spo:hasMatPiecewiseLinearPlasticityLogInterpolation rdf:type rdf:Property .
-spo:hasMatPiecewiseLinearPlasticityLogInterpolation rdf:type owl:DatatypeProperty .
-spo:hasMatPiecewiseLinearPlasticityLogInterpolation rdfs:label "has MatPiecewiseLinearPlasticityLogInterpolation" .
-spo:hasMatPiecewiseLinearPlasticityLogInterpolation rdfs:seeAlso :MatPiecewiseLinearPlasticityLogInterpolation .
-spo:hasMatPiecewiseLinearPlasticityLogInterpolation rdfs:seeAlso spo:hasMatPiecewiseLinearPlasticityLogInterpolation_Object .
+spo:hasYieldStress_MegaPA rdf:type rdf:Property .
+spo:hasYieldStress_MegaPA rdf:type owl:DatatypeProperty .
+spo:hasYieldStress_MegaPA rdfs:label "has YieldStress" .
+spo:hasYieldStress_MegaPA rdfs:seeAlso :YieldStress .
+spo:hasYieldStress_MegaPA rdfs:seeAlso spo:hasYieldStress_Object .
+spo:hasYieldStress_MegaPA spo:hasUnit <https://qudt.org/vocab/unit/MegaPA> .
+spo:hasYieldStress_MegaPA spo:hasUnitLabel "MPa" .
 :PercentageExtension rdf:type owl:Class .
 :PercentageExtension rdfs:label "PercentageExtension"@en .
 :PercentageExtension rdfs:subClassOf pmdco:ValueObject .
@@ -1476,6 +1471,11 @@ spo:hasMatPiecewiseLinearPlasticityLogInterpolation rdfs:seeAlso spo:hasMatPiece
 :PercentageExtension spo:hasTypicalUnitLabel "- " .
 :PercentageExtension spo:isBasedOn :Extension .
 :PercentageExtension spo:isBasedOn :ExtensometerGaugeLength .
+spo:hasMatPiecewiseLinearPlasticityLogInterpolation rdf:type rdf:Property .
+spo:hasMatPiecewiseLinearPlasticityLogInterpolation rdf:type owl:DatatypeProperty .
+spo:hasMatPiecewiseLinearPlasticityLogInterpolation rdfs:label "has MatPiecewiseLinearPlasticityLogInterpolation" .
+spo:hasMatPiecewiseLinearPlasticityLogInterpolation rdfs:seeAlso :MatPiecewiseLinearPlasticityLogInterpolation .
+spo:hasMatPiecewiseLinearPlasticityLogInterpolation rdfs:seeAlso spo:hasMatPiecewiseLinearPlasticityLogInterpolation_Object .
 :hasTangentYieldModulus_Object rdf:type owl:ObjectProperty .
 :hasTangentYieldModulus_Object rdfs:label "hasTangentYieldModulus"@en .
 :hasTangentYieldModulus_Object rdfs:range :TangentYieldModulus .
@@ -1550,7 +1550,7 @@ spo:hasModulusOfElasticity_MegaPA spo:hasUnitLabel "MPa" .
 <https://w3id.org/steel/ProcessOntology> dcterms:contributor " Author 2" .
 <https://w3id.org/steel/ProcessOntology> dcterms:contributor "Author 1" .
 <https://w3id.org/steel/ProcessOntology> dcterms:created "2023-06-01" .
-<https://w3id.org/steel/ProcessOntology> dcterms:date "2024-05-07T11:04:06+00:00" .
+<https://w3id.org/steel/ProcessOntology> dcterms:date "2024-05-07T12:04:10+00:00" .
 <https://w3id.org/steel/ProcessOntology> dcterms:license <https://creativecommons.org/licenses/by/4.0/> .
 <https://w3id.org/steel/ProcessOntology> dcterms:rights "CC-BY xlsx2owl" .
 <https://w3id.org/steel/ProcessOntology> owl:versionInfo "2.0"@en .

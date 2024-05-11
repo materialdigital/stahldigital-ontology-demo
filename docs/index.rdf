@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:pmdco="https://material-digital.de/pmdco/" xmlns:qudt="http://qudt.org/schema/qudt/" xmlns:qudtUnit="http://qudt.org/vocab/unit/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:spo="https://w3id.org/steel/ProcessOntology/" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" xmlns="https://materialdigital.github.io/stahldigital-ontology-demo/">
+<rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:pmdco="https://material-digital.de/pmdco/" xmlns:qudt="http://qudt.org/schema/qudt/" xmlns:qudtUnit="http://qudt.org/vocab/unit/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:spo="https://w3id.org/steel/ProcessOntology/" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" xmlns="https://materialdigital.github.io/stahldigital-ontology-demo/">
   <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/hasMeanEngineeringStrainRate_Object">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
   </rdf:Description>
@@ -29,18 +29,6 @@
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/hasSampleIdentifier">
     <rdfs:seeAlso rdf:resource="https://w3id.org/steel/ProcessOntology/hasSampleIdentifier_Object"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/OriginalCrosssection">
-    <spo:isBasedOn rdf:resource="https://materialdigital.github.io/stahldigital-ontology-demo/OriginalThickness"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/OriginalCrosssection">
-    <spo:hasTypicalUnitLabel>mm2</spo:hasTypicalUnitLabel>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/OriginalCrosssection">
-    <spo:isBasedOn rdf:resource="https://materialdigital.github.io/stahldigital-ontology-demo/OriginalWidth"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/OriginalCrosssection">
-    <spo:isBasedOn rdf:resource="https://materialdigital.github.io/stahldigital-ontology-demo/Diameter"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/OriginalCrosssection">
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -81,8 +69,23 @@
   <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/OriginalCrosssection">
     <spo:hasTypicalUnit rdf:resource="http://qudt.org/vocab/unit/MilliM2"/>
   </rdf:Description>
+  <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/OriginalCrosssection">
+    <spo:hasTypicalUnitLabel>mm2</spo:hasTypicalUnitLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/OriginalCrosssection">
+    <spo:isBasedOn rdf:resource="https://materialdigital.github.io/stahldigital-ontology-demo/OriginalThickness"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/OriginalCrosssection">
+    <spo:isBasedOn rdf:resource="https://materialdigital.github.io/stahldigital-ontology-demo/OriginalWidth"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/OriginalCrosssection">
+    <spo:isBasedOn rdf:resource="https://materialdigital.github.io/stahldigital-ontology-demo/Diameter"/>
+  </rdf:Description>
   <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/StrainRateScaleIdendifier">
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/StrainRateScaleIdendifier">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/StrainRateScaleIdendifier">
     <rdfs:label xml:lang="en">StrainRateScaleIdendifier</rdfs:label>
@@ -106,13 +109,13 @@
     <spo:hasLabelSource xml:lang="en">LS-DYNA_Manual_Volume_2</spo:hasLabelSource>
   </rdf:Description>
   <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/StrainRateScaleIdendifier">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/StrainRateScaleIdendifier">
     <spo:hasTypicalUnitLabel>-</spo:hasTypicalUnitLabel>
   </rdf:Description>
   <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/TestTemperatur">
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/TestTemperatur">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/TestTemperatur">
     <rdfs:label xml:lang="en">TestTemperatur</rdfs:label>
@@ -137,9 +140,6 @@
   </rdf:Description>
   <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/TestTemperatur">
     <spo:hasLabelSource xml:lang="de">YS1-Fz-D1Q</spo:hasLabelSource>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/TestTemperatur">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/hasForce_Object">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
@@ -173,12 +173,6 @@
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/attributeB">
     <skos:preflabel xml:lang="en">attributeB Label EN</skos:preflabel>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/NominalEngineeringStrainRate">
-    <spo:isBasedOn rdf:resource="https://materialdigital.github.io/stahldigital-ontology-demo/InitialDisplacementRate"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/NominalEngineeringStrainRate">
-    <spo:isBasedOn rdf:resource="https://materialdigital.github.io/stahldigital-ontology-demo/ParallelLength"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/NominalEngineeringStrainRate">
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -221,6 +215,12 @@
   </rdf:Description>
   <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/NominalEngineeringStrainRate">
     <spo:hasTypicalUnitLabel>s-1</spo:hasTypicalUnitLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/NominalEngineeringStrainRate">
+    <spo:isBasedOn rdf:resource="https://materialdigital.github.io/stahldigital-ontology-demo/InitialDisplacementRate"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/NominalEngineeringStrainRate">
+    <spo:isBasedOn rdf:resource="https://materialdigital.github.io/stahldigital-ontology-demo/ParallelLength"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/hasTrueStress_MegaPA">
     <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
@@ -325,33 +325,6 @@
     <skos:preflabel xml:lang="en">hasExtension</skos:preflabel>
   </rdf:Description>
   <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/MinimumCrosssectionAfterFracture">
-    <spo:isBasedOn rdf:resource="https://materialdigital.github.io/stahldigital-ontology-demo/ThicknessAfterFracture1"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/MinimumCrosssectionAfterFracture">
-    <spo:hasTypicalUnitLabel>mm2</spo:hasTypicalUnitLabel>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/MinimumCrosssectionAfterFracture">
-    <spo:hasTypicalUnit rdf:resource="http://qudt.org/vocab/unit/MilliM2"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/MinimumCrosssectionAfterFracture">
-    <spo:hasSymbol xml:lang="en">S_{u}</spo:hasSymbol>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/MinimumCrosssectionAfterFracture">
-    <spo:isBasedOn rdf:resource="https://materialdigital.github.io/stahldigital-ontology-demo/ThicknessAfterFracture2"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/MinimumCrosssectionAfterFracture">
-    <spo:isBasedOn rdf:resource="https://materialdigital.github.io/stahldigital-ontology-demo/WidthAfterFracture1"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/MinimumCrosssectionAfterFracture">
-    <spo:isBasedOn rdf:resource="https://materialdigital.github.io/stahldigital-ontology-demo/WidthAfterFracture2"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/MinimumCrosssectionAfterFracture">
-    <spo:isBasedOn rdf:resource="https://materialdigital.github.io/stahldigital-ontology-demo/DiameterAfterFracture1"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/MinimumCrosssectionAfterFracture">
-    <spo:isBasedOn rdf:resource="https://materialdigital.github.io/stahldigital-ontology-demo/DiameterAfterFracture2"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/MinimumCrosssectionAfterFracture">
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/MinimumCrosssectionAfterFracture">
@@ -384,6 +357,42 @@
   <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/MinimumCrosssectionAfterFracture">
     <spo:hasLabelSource xml:lang="de">YS1-Fz-D1Q</spo:hasLabelSource>
   </rdf:Description>
+  <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/MinimumCrosssectionAfterFracture">
+    <spo:hasSymbol xml:lang="en">S_{u}</spo:hasSymbol>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/MinimumCrosssectionAfterFracture">
+    <spo:hasTypicalUnit rdf:resource="http://qudt.org/vocab/unit/MilliM2"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/MinimumCrosssectionAfterFracture">
+    <spo:hasTypicalUnitLabel>mm2</spo:hasTypicalUnitLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/MinimumCrosssectionAfterFracture">
+    <spo:isBasedOn rdf:resource="https://materialdigital.github.io/stahldigital-ontology-demo/ThicknessAfterFracture1"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/MinimumCrosssectionAfterFracture">
+    <spo:isBasedOn rdf:resource="https://materialdigital.github.io/stahldigital-ontology-demo/ThicknessAfterFracture2"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/MinimumCrosssectionAfterFracture">
+    <spo:isBasedOn rdf:resource="https://materialdigital.github.io/stahldigital-ontology-demo/WidthAfterFracture1"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/MinimumCrosssectionAfterFracture">
+    <spo:isBasedOn rdf:resource="https://materialdigital.github.io/stahldigital-ontology-demo/WidthAfterFracture2"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/MinimumCrosssectionAfterFracture">
+    <spo:isBasedOn rdf:resource="https://materialdigital.github.io/stahldigital-ontology-demo/DiameterAfterFracture1"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/MinimumCrosssectionAfterFracture">
+    <spo:isBasedOn rdf:resource="https://materialdigital.github.io/stahldigital-ontology-demo/DiameterAfterFracture2"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/Material">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/Material">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/Material">
+    <rdfs:label xml:lang="en">Material</rdfs:label>
+  </rdf:Description>
   <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/Material">
     <rdfs:subClassOf rdf:resource="https://material-digital.de/pmdco/ValueObject"/>
   </rdf:Description>
@@ -408,17 +417,11 @@
   <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/Material">
     <spo:hasLabelSource xml:lang="de">YS1-Fz-D1Q</spo:hasLabelSource>
   </rdf:Description>
-  <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/Material">
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/Material">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/Material">
-    <rdfs:label xml:lang="en">Material</rdfs:label>
-  </rdf:Description>
   <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/FailureTreatment">
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/FailureTreatment">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/FailureTreatment">
     <rdfs:label xml:lang="en">FailureTreatment</rdfs:label>
@@ -445,9 +448,6 @@
     <spo:hasLabelSource xml:lang="en">LS-DYNA_Manual_Volume_2</spo:hasLabelSource>
   </rdf:Description>
   <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/FailureTreatment">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/FailureTreatment">
     <spo:hasTypicalUnit rdf:resource="https://qudt.org/vocab/unit/UNITLESS"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/FailureTreatment">
@@ -455,6 +455,9 @@
   </rdf:Description>
   <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/LowerYieldStrength">
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/LowerYieldStrength">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/LowerYieldStrength">
     <rdfs:label xml:lang="en">LowerYieldStrength</rdfs:label>
@@ -476,9 +479,6 @@
   </rdf:Description>
   <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/LowerYieldStrength">
     <spo:hasLabelSource xml:lang="de">YS1-Fz-D1Q</spo:hasLabelSource>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/LowerYieldStrength">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/LowerYieldStrength">
     <spo:hasSymbol xml:lang="en">R_{eL}</spo:hasSymbol>
@@ -547,6 +547,9 @@
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/Material_Edelstahl_1.4307">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/Material_Edelstahl_1.4307">
     <rdfs:label xml:lang="en">Material_Edelstahl_1.4307</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/Material_Edelstahl_1.4307">
@@ -560,9 +563,6 @@
   </rdf:Description>
   <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/Material_Edelstahl_1.4307">
     <skos:preflabel xml:lang="en">Material_Edelstahl_1.4307</skos:preflabel>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/Material_Edelstahl_1.4307">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/Material_Edelstahl_1.4307">
     <spo:isBasedOn rdf:resource="https://materialdigital.github.io/stahldigital-ontology-demo/Rustfreesteel"/>
@@ -584,6 +584,9 @@
   </rdf:Description>
   <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/ForceMeasuringSystem">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/ForceMeasuringSystem">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/ForceMeasuringSystem">
     <rdfs:label xml:lang="en">ForceMeasuringSystem</rdfs:label>
@@ -608,9 +611,6 @@
   </rdf:Description>
   <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/ForceMeasuringSystem">
     <spo:hasLabelSource xml:lang="de">YS1-Fz-D1Q</spo:hasLabelSource>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/ForceMeasuringSystem">
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/hasProject%20Name_Object">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
@@ -667,6 +667,9 @@
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/YieldingIdentifier">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/YieldingIdentifier">
     <rdfs:label xml:lang="en">YieldingIdentifier</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/YieldingIdentifier">
@@ -689,13 +692,13 @@ Identifier which relates the Table to descibe the yield stress by using differen
     <spo:hasLabelSource xml:lang="en">LS-DYNA_Manual_Volume_2</spo:hasLabelSource>
   </rdf:Description>
   <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/YieldingIdentifier">
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/YieldingIdentifier">
     <spo:hasTypicalUnitLabel>-</spo:hasTypicalUnitLabel>
   </rdf:Description>
   <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/ExtensionMeasuringSystem">
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/ExtensionMeasuringSystem">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/ExtensionMeasuringSystem">
     <rdfs:label xml:lang="en">ExtensionMeasuringSystem</rdfs:label>
@@ -724,9 +727,6 @@ Identifier which relates the Table to descibe the yield stress by using differen
   <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/ExtensionMeasuringSystem">
     <spo:hasLabelSource xml:lang="de">YS1-Fz-D1Q</spo:hasLabelSource>
   </rdf:Description>
-  <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/ExtensionMeasuringSystem">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
   <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/hasMinimumCrosssectionAfterFracture_Object">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
   </rdf:Description>
@@ -744,6 +744,9 @@ Identifier which relates the Table to descibe the yield stress by using differen
   </rdf:Description>
   <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/TrueStress">
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/TrueStress">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/TrueStress">
     <rdfs:label xml:lang="en">TrueStress</rdfs:label>
@@ -765,9 +768,6 @@ Identifier which relates the Table to descibe the yield stress by using differen
   </rdf:Description>
   <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/TrueStress">
     <spo:hasLabelSource xml:lang="de">YS1-Fz-D1Q</spo:hasLabelSource>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/TrueStress">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/TrueStress">
     <spo:hasSymbol xml:lang="en">Sigw</spo:hasSymbol>
@@ -839,6 +839,9 @@ Identifier which relates the Table to descibe the yield stress by using differen
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/TestPieceGeometry">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/TestPieceGeometry">
     <rdfs:label xml:lang="en">TestPieceGeometry</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/TestPieceGeometry">
@@ -867,9 +870,6 @@ Identifier which relates the Table to descibe the yield stress by using differen
   </rdf:Description>
   <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/TestPieceGeometry">
     <spo:hasLabelSource xml:lang="de">YS1-Fz-D1Q</spo:hasLabelSource>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/TestPieceGeometry">
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/hasLowerYieldStrength_MegaPA">
     <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
@@ -953,6 +953,9 @@ Identifier which relates the Table to descibe the yield stress by using differen
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/Material-steel-concrete-R">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/Material-steel-concrete-R">
     <rdfs:label xml:lang="en">Material-steel-concrete-R</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/Material-steel-concrete-R">
@@ -977,13 +980,13 @@ Identifier which relates the Table to descibe the yield stress by using differen
     <spo:hasExampleData>1.4400999999999999</spo:hasExampleData>
   </rdf:Description>
   <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/Material-steel-concrete-R">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/Material-steel-concrete-R">
     <spo:hasSymbol xml:lang="en">Msc</spo:hasSymbol>
   </rdf:Description>
   <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/TestPieceLength">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/TestPieceLength">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/TestPieceLength">
     <rdfs:label xml:lang="en">TestPieceLength</rdfs:label>
@@ -1010,9 +1013,6 @@ Identifier which relates the Table to descibe the yield stress by using differen
     <spo:hasLabelSource xml:lang="de">YS1-Fz-D1Q</spo:hasLabelSource>
   </rdf:Description>
   <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/TestPieceLength">
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/TestPieceLength">
     <spo:hasSymbol xml:lang="en">L_{t}</spo:hasSymbol>
   </rdf:Description>
   <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/TestPieceLength">
@@ -1023,6 +1023,9 @@ Identifier which relates the Table to descibe the yield stress by using differen
   </rdf:Description>
   <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/TangentYieldModulus">
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/TangentYieldModulus">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/TangentYieldModulus">
     <rdfs:label xml:lang="en">TangentYieldModulus</rdfs:label>
@@ -1044,9 +1047,6 @@ Identifier which relates the Table to descibe the yield stress by using differen
   </rdf:Description>
   <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/TangentYieldModulus">
     <spo:hasLabelSource xml:lang="en">LS-DYNA_Manual_Volume_2</spo:hasLabelSource>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/TangentYieldModulus">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/TangentYieldModulus">
     <spo:hasTypicalUnit rdf:resource="https://qudt.org/vocab/unit/MegaPA"/>
@@ -1136,6 +1136,9 @@ Identifier which relates the Table to descibe the yield stress by using differen
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/StrainRateScaleParameterP">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/StrainRateScaleParameterP">
     <rdfs:label xml:lang="en">StrainRateScaleParameterP</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/StrainRateScaleParameterP">
@@ -1154,9 +1157,6 @@ Identifier which relates the Table to descibe the yield stress by using differen
     <spo:hasLabelSource xml:lang="en">LS-DYNA_Manual_Volume_2</spo:hasLabelSource>
   </rdf:Description>
   <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/StrainRateScaleParameterP">
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/StrainRateScaleParameterP">
     <spo:hasTypicalUnit rdf:resource="https://qudt.org/vocab/unit/UNITLESS"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/StrainRateScaleParameterP">
@@ -1164,6 +1164,9 @@ Identifier which relates the Table to descibe the yield stress by using differen
   </rdf:Description>
   <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/InitialDisplacementRate">
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/InitialDisplacementRate">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/InitialDisplacementRate">
     <rdfs:label xml:lang="en">InitialDisplacementRate</rdfs:label>
@@ -1191,9 +1194,6 @@ Identifier which relates the Table to descibe the yield stress by using differen
   </rdf:Description>
   <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/InitialDisplacementRate">
     <spo:hasLabelSource xml:lang="de">YS1-Fz-D1Q</spo:hasLabelSource>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/InitialDisplacementRate">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/InitialDisplacementRate">
     <spo:hasTypicalUnitLabel>mm/s or m/s</spo:hasTypicalUnitLabel>
@@ -1238,21 +1238,6 @@ Identifier which relates the Table to descibe the yield stress by using differen
     <skos:preflabel xml:lang="en">hasProjectName</skos:preflabel>
   </rdf:Description>
   <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/Extension">
-    <spo:hasLabelSource xml:lang="de">YS1-Fz-D1Q</spo:hasLabelSource>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/Extension">
-    <spo:hasExampleData>0.026</spo:hasExampleData>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/Extension">
-    <spo:hasTypicalUnitLabel>mm</spo:hasTypicalUnitLabel>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/Extension">
-    <spo:hasTypicalUnit rdf:resource="http://qudt.org/vocab/unit/MilliM"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/Extension">
-    <spo:hasSymbol xml:lang="en">dL</spo:hasSymbol>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/Extension">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/Extension">
@@ -1291,6 +1276,21 @@ Identifier which relates the Table to descibe the yield stress by using differen
   <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/Extension">
     <spo:hasDescriptionCitationSource xml:lang="en">Authors</spo:hasDescriptionCitationSource>
   </rdf:Description>
+  <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/Extension">
+    <spo:hasExampleData>0.026</spo:hasExampleData>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/Extension">
+    <spo:hasLabelSource xml:lang="de">YS1-Fz-D1Q</spo:hasLabelSource>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/Extension">
+    <spo:hasSymbol xml:lang="en">dL</spo:hasSymbol>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/Extension">
+    <spo:hasTypicalUnit rdf:resource="http://qudt.org/vocab/unit/MilliM"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/Extension">
+    <spo:hasTypicalUnitLabel>mm</spo:hasTypicalUnitLabel>
+  </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/hasOriginalWidth_MilliM">
     <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
   </rdf:Description>
@@ -1311,18 +1311,6 @@ Identifier which relates the Table to descibe the yield stress by using differen
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/hasOriginalWidth_MilliM">
     <spo:hasUnitLabel>mm</spo:hasUnitLabel>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/TimeDependentEngineeringStrainRate">
-    <spo:isBasedOn rdf:resource="https://materialdigital.github.io/stahldigital-ontology-demo/ExtensometerGaugeLength"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/TimeDependentEngineeringStrainRate">
-    <spo:hasTypicalUnitLabel>s-1</spo:hasTypicalUnitLabel>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/TimeDependentEngineeringStrainRate">
-    <spo:isBasedOn rdf:resource="https://materialdigital.github.io/stahldigital-ontology-demo/Time"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/TimeDependentEngineeringStrainRate">
-    <spo:isBasedOn rdf:resource="https://materialdigital.github.io/stahldigital-ontology-demo/Extension"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/TimeDependentEngineeringStrainRate">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
@@ -1363,6 +1351,18 @@ Identifier which relates the Table to descibe the yield stress by using differen
   <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/TimeDependentEngineeringStrainRate">
     <spo:hasTypicalUnit rdf:resource="http://qudt.org/vocab/unit/PER-SEC"/>
   </rdf:Description>
+  <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/TimeDependentEngineeringStrainRate">
+    <spo:hasTypicalUnitLabel>s-1</spo:hasTypicalUnitLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/TimeDependentEngineeringStrainRate">
+    <spo:isBasedOn rdf:resource="https://materialdigital.github.io/stahldigital-ontology-demo/ExtensometerGaugeLength"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/TimeDependentEngineeringStrainRate">
+    <spo:isBasedOn rdf:resource="https://materialdigital.github.io/stahldigital-ontology-demo/Time"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/TimeDependentEngineeringStrainRate">
+    <spo:isBasedOn rdf:resource="https://materialdigital.github.io/stahldigital-ontology-demo/Extension"/>
+  </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/hasSchaftfestigkeit_FBSIID6_R_MegaPA">
     <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
   </rdf:Description>
@@ -1388,6 +1388,9 @@ Identifier which relates the Table to descibe the yield stress by using differen
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/EngineeringStress">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/EngineeringStress">
     <rdfs:label xml:lang="en">EngineeringStress</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/EngineeringStress">
@@ -1409,9 +1412,6 @@ Identifier which relates the Table to descibe the yield stress by using differen
     <spo:hasLabelSource xml:lang="de">YS1-Fz-D1Q</spo:hasLabelSource>
   </rdf:Description>
   <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/EngineeringStress">
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/EngineeringStress">
     <spo:hasSymbol xml:lang="en">Sig-technisch</spo:hasSymbol>
   </rdf:Description>
   <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/EngineeringStress">
@@ -1430,6 +1430,9 @@ Identifier which relates the Table to descibe the yield stress by using differen
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/Tester">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/Tester">
     <rdfs:label xml:lang="en">Tester</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/Tester">
@@ -1443,9 +1446,6 @@ Identifier which relates the Table to descibe the yield stress by using differen
   </rdf:Description>
   <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/Tester">
     <spo:hasLabelSource xml:lang="de">YS1-Fz-D1Q</spo:hasLabelSource>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/Tester">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/hasExtensometerGaugeLength_MilliM">
     <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
@@ -1472,6 +1472,9 @@ Identifier which relates the Table to descibe the yield stress by using differen
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/YoungsModulus">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/YoungsModulus">
     <rdfs:label xml:lang="en">YoungsModulus</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/YoungsModulus">
@@ -1493,9 +1496,6 @@ Identifier which relates the Table to descibe the yield stress by using differen
     <spo:hasLabelSource xml:lang="en">LS-DYNA_Manual_Volume_2</spo:hasLabelSource>
   </rdf:Description>
   <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/YoungsModulus">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/YoungsModulus">
     <spo:hasTypicalUnit rdf:resource="https://qudt.org/vocab/unit/MegaPA"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/YoungsModulus">
@@ -1503,6 +1503,9 @@ Identifier which relates the Table to descibe the yield stress by using differen
   </rdf:Description>
   <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/StrainRateScaleParameterC">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/StrainRateScaleParameterC">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/StrainRateScaleParameterC">
     <rdfs:label xml:lang="en">StrainRateScaleParameterC</rdfs:label>
@@ -1521,9 +1524,6 @@ Identifier which relates the Table to descibe the yield stress by using differen
   </rdf:Description>
   <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/StrainRateScaleParameterC">
     <spo:hasLabelSource xml:lang="en">LS-DYNA_Manual_Volume_2</spo:hasLabelSource>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/StrainRateScaleParameterC">
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/StrainRateScaleParameterC">
     <spo:hasTypicalUnit rdf:resource="https://qudt.org/vocab/unit/UNITLESS"/>
@@ -1545,12 +1545,6 @@ Identifier which relates the Table to descibe the yield stress by using differen
   </rdf:Description>
   <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/hasMaterial_Edelstahl_1.4307_Object">
     <skos:preflabel xml:lang="en">hasMaterial_Edelstahl_1.4307</skos:preflabel>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/TrueStressAtFracture">
-    <spo:isBasedOn rdf:resource="https://materialdigital.github.io/stahldigital-ontology-demo/MinimumCrosssectionAfterFracture"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/TrueStressAtFracture">
-    <spo:isBasedOn rdf:resource="https://materialdigital.github.io/stahldigital-ontology-demo/ForceAtFracture"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/TrueStressAtFracture">
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -1594,8 +1588,17 @@ Identifier which relates the Table to descibe the yield stress by using differen
   <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/TrueStressAtFracture">
     <spo:hasTypicalUnitLabel>MPa</spo:hasTypicalUnitLabel>
   </rdf:Description>
+  <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/TrueStressAtFracture">
+    <spo:isBasedOn rdf:resource="https://materialdigital.github.io/stahldigital-ontology-demo/MinimumCrosssectionAfterFracture"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/TrueStressAtFracture">
+    <spo:isBasedOn rdf:resource="https://materialdigital.github.io/stahldigital-ontology-demo/ForceAtFracture"/>
+  </rdf:Description>
   <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/Project%20Name">
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/Project%20Name">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/Project%20Name">
     <rdfs:label xml:lang="en">Project Name</rdfs:label>
@@ -1612,11 +1615,11 @@ Identifier which relates the Table to descibe the yield stress by using differen
   <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/Project%20Name">
     <skos:preflabel xml:lang="en">Project Name</skos:preflabel>
   </rdf:Description>
-  <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/Project%20Name">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
   <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/MaterialIdentifier">
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/MaterialIdentifier">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/MaterialIdentifier">
     <rdfs:label xml:lang="en">MaterialIdentifier</rdfs:label>
@@ -1638,9 +1641,6 @@ Identifier which relates the Table to descibe the yield stress by using differen
   </rdf:Description>
   <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/MaterialIdentifier">
     <spo:hasLabelSource xml:lang="en">LS-DYNA_Manual_Volume_2</spo:hasLabelSource>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/MaterialIdentifier">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/MaterialIdentifier">
     <spo:hasTypicalUnitLabel>-</spo:hasTypicalUnitLabel>
@@ -1676,6 +1676,9 @@ Identifier which relates the Table to descibe the yield stress by using differen
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/Schaftdurchmesser_FBSIID6">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/Schaftdurchmesser_FBSIID6">
     <rdfs:label xml:lang="en">Schaftdurchmesser_FBSIID6</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/Schaftdurchmesser_FBSIID6">
@@ -1690,11 +1693,11 @@ Identifier which relates the Table to descibe the yield stress by using differen
   <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/Schaftdurchmesser_FBSIID6">
     <skos:preflabel xml:lang="en">Schaftdurchmesser_FBSIID6</skos:preflabel>
   </rdf:Description>
-  <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/Schaftdurchmesser_FBSIID6">
+  <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/MassDensity">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/MassDensity">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/MassDensity">
     <rdfs:label xml:lang="en">MassDensity</rdfs:label>
@@ -1718,9 +1721,6 @@ Identifier which relates the Table to descibe the yield stress by using differen
     <spo:hasLabelSource xml:lang="en">LS-DYNA_Manual_Volume_2</spo:hasLabelSource>
   </rdf:Description>
   <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/MassDensity">
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/MassDensity">
     <spo:hasTypicalUnit rdf:resource="https://qudt.org/vocab/unit/GM-PER-CentiM3"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/MassDensity">
@@ -1728,6 +1728,9 @@ Identifier which relates the Table to descibe the yield stress by using differen
   </rdf:Description>
   <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/TimeStamp">
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/TimeStamp">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/TimeStamp">
     <rdfs:label xml:lang="en">TimeStamp</rdfs:label>
@@ -1752,9 +1755,6 @@ Identifier which relates the Table to descibe the yield stress by using differen
   </rdf:Description>
   <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/TimeStamp">
     <spo:hasLabelSource xml:lang="de">YS1-Fz-D1Q</spo:hasLabelSource>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/TimeStamp">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/hasProjectNumber_Object">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
@@ -1787,6 +1787,9 @@ Identifier which relates the Table to descibe the yield stress by using differen
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/PoissonRatio">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/PoissonRatio">
     <rdfs:label xml:lang="en">PoissonRatio</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/PoissonRatio">
@@ -1806,9 +1809,6 @@ Identifier which relates the Table to descibe the yield stress by using differen
   </rdf:Description>
   <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/PoissonRatio">
     <spo:hasLabelSource xml:lang="en">LS-DYNA_Manual_Volume_2</spo:hasLabelSource>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/PoissonRatio">
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/PoissonRatio">
     <spo:hasTypicalUnit rdf:resource="https://qudt.org/vocab/unit/UNITLESS"/>
@@ -1883,27 +1883,6 @@ Identifier which relates the Table to descibe the yield stress by using differen
     <skos:preflabel xml:lang="en">hasInitialDisplacementRate</skos:preflabel>
   </rdf:Description>
   <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/CharacteristicEngineeringStrainRate">
-    <spo:hasTypicalUnitLabel>s-1</spo:hasTypicalUnitLabel>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/CharacteristicEngineeringStrainRate">
-    <spo:hasTypicalUnit rdf:resource="http://qudt.org/vocab/unit/PER-SEC"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/CharacteristicEngineeringStrainRate">
-    <spo:hasLabelSource xml:lang="de">YS1-Fz-D1Q</spo:hasLabelSource>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/CharacteristicEngineeringStrainRate">
-    <spo:isBasedOn rdf:resource="https://materialdigital.github.io/stahldigital-ontology-demo/Time"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/CharacteristicEngineeringStrainRate">
-    <spo:isBasedOn rdf:resource="https://materialdigital.github.io/stahldigital-ontology-demo/Extension"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/CharacteristicEngineeringStrainRate">
-    <spo:isBasedOn rdf:resource="https://materialdigital.github.io/stahldigital-ontology-demo/ProofStrength_0.2Percentage"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/CharacteristicEngineeringStrainRate">
-    <spo:isBasedOn rdf:resource="https://materialdigital.github.io/stahldigital-ontology-demo/ExtensometerGaugeLength"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/CharacteristicEngineeringStrainRate">
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/CharacteristicEngineeringStrainRate">
@@ -1938,6 +1917,27 @@ Identifier which relates the Table to descibe the yield stress by using differen
   </rdf:Description>
   <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/CharacteristicEngineeringStrainRate">
     <spo:hasExampleData>0.8</spo:hasExampleData>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/CharacteristicEngineeringStrainRate">
+    <spo:hasLabelSource xml:lang="de">YS1-Fz-D1Q</spo:hasLabelSource>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/CharacteristicEngineeringStrainRate">
+    <spo:hasTypicalUnit rdf:resource="http://qudt.org/vocab/unit/PER-SEC"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/CharacteristicEngineeringStrainRate">
+    <spo:hasTypicalUnitLabel>s-1</spo:hasTypicalUnitLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/CharacteristicEngineeringStrainRate">
+    <spo:isBasedOn rdf:resource="https://materialdigital.github.io/stahldigital-ontology-demo/Time"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/CharacteristicEngineeringStrainRate">
+    <spo:isBasedOn rdf:resource="https://materialdigital.github.io/stahldigital-ontology-demo/Extension"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/CharacteristicEngineeringStrainRate">
+    <spo:isBasedOn rdf:resource="https://materialdigital.github.io/stahldigital-ontology-demo/ProofStrength_0.2Percentage"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/CharacteristicEngineeringStrainRate">
+    <spo:isBasedOn rdf:resource="https://materialdigital.github.io/stahldigital-ontology-demo/ExtensometerGaugeLength"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/hasFrameRate_Object">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
@@ -2045,12 +2045,6 @@ Identifier which relates the Table to descibe the yield stress by using differen
     <spo:hasUnitLabel>g/cm^3</spo:hasUnitLabel>
   </rdf:Description>
   <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/ExtensometerGaugeLength">
-    <spo:hasTypicalUnit rdf:resource="http://qudt.org/vocab/unit/MilliM"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/ExtensometerGaugeLength">
-    <spo:hasTypicalUnitLabel>mm</spo:hasTypicalUnitLabel>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/ExtensometerGaugeLength">
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/ExtensometerGaugeLength">
@@ -2091,6 +2085,12 @@ Identifier which relates the Table to descibe the yield stress by using differen
   </rdf:Description>
   <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/ExtensometerGaugeLength">
     <spo:hasSymbol xml:lang="en">L_{0}</spo:hasSymbol>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/ExtensometerGaugeLength">
+    <spo:hasTypicalUnit rdf:resource="http://qudt.org/vocab/unit/MilliM"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/ExtensometerGaugeLength">
+    <spo:hasTypicalUnitLabel>mm</spo:hasTypicalUnitLabel>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/hasExtensionMeasuringSystem">
     <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
@@ -2144,12 +2144,6 @@ Identifier which relates the Table to descibe the yield stress by using differen
     <spo:hasUnitLabel>%</spo:hasUnitLabel>
   </rdf:Description>
   <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/Force">
-    <spo:hasTypicalUnit rdf:resource="http://qudt.org/vocab/unit/KiloN"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/Force">
-    <spo:hasTypicalUnitLabel>kN</spo:hasTypicalUnitLabel>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/Force">
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/Force">
@@ -2191,8 +2185,17 @@ Identifier which relates the Table to descibe the yield stress by using differen
   <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/Force">
     <spo:hasSymbol xml:lang="en">F</spo:hasSymbol>
   </rdf:Description>
+  <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/Force">
+    <spo:hasTypicalUnit rdf:resource="http://qudt.org/vocab/unit/KiloN"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/Force">
+    <spo:hasTypicalUnitLabel>kN</spo:hasTypicalUnitLabel>
+  </rdf:Description>
   <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/YieldStress">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/YieldStress">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/YieldStress">
     <rdfs:label xml:lang="en">YieldStress</rdfs:label>
@@ -2214,9 +2217,6 @@ Identifier which relates the Table to descibe the yield stress by using differen
   </rdf:Description>
   <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/YieldStress">
     <spo:hasLabelSource xml:lang="en">LS-DYNA_Manual_Volume_2</spo:hasLabelSource>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/YieldStress">
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/YieldStress">
     <spo:hasTypicalUnit rdf:resource="https://qudt.org/vocab/unit/MegaPA"/>
@@ -2241,6 +2241,9 @@ Identifier which relates the Table to descibe the yield stress by using differen
   </rdf:Description>
   <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/FrameRate">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/FrameRate">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/FrameRate">
     <rdfs:label xml:lang="en">FrameRate</rdfs:label>
@@ -2268,9 +2271,6 @@ Identifier which relates the Table to descibe the yield stress by using differen
   </rdf:Description>
   <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/FrameRate">
     <spo:hasLabelSource xml:lang="de">YS1-Fz-D1Q</spo:hasLabelSource>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/FrameRate">
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/FrameRate">
     <spo:hasTypicalUnit rdf:resource="http://qudt.org/vocab/unit/PER-SEC"/>
@@ -2310,12 +2310,6 @@ Identifier which relates the Table to descibe the yield stress by using differen
   </rdf:Description>
   <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/hasStrainRateScaleParameterP_Object">
     <skos:preflabel xml:lang="en">hasStrainRateScaleParameterP</skos:preflabel>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/PercentageReductionOfArea">
-    <spo:isBasedOn rdf:resource="https://materialdigital.github.io/stahldigital-ontology-demo/MinimumCrosssectionAfterFracture"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/PercentageReductionOfArea">
-    <spo:isBasedOn rdf:resource="https://materialdigital.github.io/stahldigital-ontology-demo/OriginalCrosssection"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/PercentageReductionOfArea">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
@@ -2359,8 +2353,17 @@ Identifier which relates the Table to descibe the yield stress by using differen
   <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/PercentageReductionOfArea">
     <spo:hasTypicalUnitLabel>%</spo:hasTypicalUnitLabel>
   </rdf:Description>
+  <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/PercentageReductionOfArea">
+    <spo:isBasedOn rdf:resource="https://materialdigital.github.io/stahldigital-ontology-demo/MinimumCrosssectionAfterFracture"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/PercentageReductionOfArea">
+    <spo:isBasedOn rdf:resource="https://materialdigital.github.io/stahldigital-ontology-demo/OriginalCrosssection"/>
+  </rdf:Description>
   <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/Material-steel-concrete-GVZ">
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/Material-steel-concrete-GVZ">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/Material-steel-concrete-GVZ">
     <rdfs:label xml:lang="en">Material-steel-concrete-GVZ</rdfs:label>
@@ -2383,9 +2386,6 @@ Identifier which relates the Table to descibe the yield stress by using differen
   <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/Material-steel-concrete-GVZ">
     <spo:hasExampleData>C15</spo:hasExampleData>
   </rdf:Description>
-  <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/Material-steel-concrete-GVZ">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/MegaPA-PER-SEC">
     <rdf:type rdf:resource="http://qudt.org/schema/qudt/Unit"/>
   </rdf:Description>
@@ -2394,6 +2394,9 @@ Identifier which relates the Table to descibe the yield stress by using differen
   </rdf:Description>
   <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/Project_Number">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/Project_Number">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/Project_Number">
     <rdfs:label xml:lang="en">Project_Number</rdfs:label>
@@ -2424,9 +2427,6 @@ Identifier which relates the Table to descibe the yield stress by using differen
   </rdf:Description>
   <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/Project_Number">
     <spo:hasLabelSource xml:lang="en">Project-Number</spo:hasLabelSource>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/Project_Number">
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/Project_Number">
     <spo:hasSymbol xml:lang="en">PSP</spo:hasSymbol>
@@ -2477,6 +2477,9 @@ Identifier which relates the Table to descibe the yield stress by using differen
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/SampleIdentifier">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/SampleIdentifier">
     <rdfs:label xml:lang="en">SampleIdentifier</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/SampleIdentifier">
@@ -2503,11 +2506,11 @@ Identifier which relates the Table to descibe the yield stress by using differen
   <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/SampleIdentifier">
     <spo:hasLabelSource xml:lang="de">YS1-Fz-D1Q</spo:hasLabelSource>
   </rdf:Description>
-  <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/SampleIdentifier">
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-  </rdf:Description>
   <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/ProjectNumber">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/ProjectNumber">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/ProjectNumber">
     <rdfs:label xml:lang="en">ProjectNumber</rdfs:label>
@@ -2530,11 +2533,11 @@ Identifier which relates the Table to descibe the yield stress by using differen
   <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/ProjectNumber">
     <spo:hasLabelSource xml:lang="de">YS1-Fz-D1Q</spo:hasLabelSource>
   </rdf:Description>
-  <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/ProjectNumber">
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-  </rdf:Description>
   <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/TensileStrength">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/TensileStrength">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/TensileStrength">
     <rdfs:label xml:lang="en">TensileStrength</rdfs:label>
@@ -2564,9 +2567,6 @@ Identifier which relates the Table to descibe the yield stress by using differen
     <spo:hasLabelSource xml:lang="de">YS1-Fz-D1Q</spo:hasLabelSource>
   </rdf:Description>
   <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/TensileStrength">
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/TensileStrength">
     <spo:hasSymbol xml:lang="en">R_{m}</spo:hasSymbol>
   </rdf:Description>
   <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/TensileStrength">
@@ -2580,6 +2580,9 @@ Identifier which relates the Table to descibe the yield stress by using differen
   </rdf:Description>
   <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/Project_Name">
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/Project_Name">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/Project_Name">
     <rdfs:label xml:lang="en">Project_Name</rdfs:label>
@@ -2599,9 +2602,6 @@ Identifier which relates the Table to descibe the yield stress by using differen
   <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/Project_Name">
     <skos:related rdf:resource="https://materialdigital.github.io/stahldigital-ontology-demo/Project_Number"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/Project_Name">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/hasTestPieceGeometry">
     <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
   </rdf:Description>
@@ -2616,18 +2616,6 @@ Identifier which relates the Table to descibe the yield stress by using differen
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/hasTestPieceGeometry">
     <rdfs:seeAlso rdf:resource="https://w3id.org/steel/ProcessOntology/hasTestPieceGeometry_Object"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/PercentageElongationAfterFracture">
-    <spo:isBasedOn rdf:resource="https://materialdigital.github.io/stahldigital-ontology-demo/ModulusOfElasticity"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/PercentageElongationAfterFracture">
-    <spo:hasTypicalUnitLabel>%</spo:hasTypicalUnitLabel>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/PercentageElongationAfterFracture">
-    <spo:isBasedOn rdf:resource="https://materialdigital.github.io/stahldigital-ontology-demo/EngineeringStress"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/PercentageElongationAfterFracture">
-    <spo:isBasedOn rdf:resource="https://materialdigital.github.io/stahldigital-ontology-demo/PercentageExtension"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/PercentageElongationAfterFracture">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
@@ -2668,6 +2656,18 @@ Identifier which relates the Table to descibe the yield stress by using differen
   <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/PercentageElongationAfterFracture">
     <spo:hasTypicalUnit rdf:resource="http://qudt.org/vocab/unit/PERCENT"/>
   </rdf:Description>
+  <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/PercentageElongationAfterFracture">
+    <spo:hasTypicalUnitLabel>%</spo:hasTypicalUnitLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/PercentageElongationAfterFracture">
+    <spo:isBasedOn rdf:resource="https://materialdigital.github.io/stahldigital-ontology-demo/ModulusOfElasticity"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/PercentageElongationAfterFracture">
+    <spo:isBasedOn rdf:resource="https://materialdigital.github.io/stahldigital-ontology-demo/EngineeringStress"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/PercentageElongationAfterFracture">
+    <spo:isBasedOn rdf:resource="https://materialdigital.github.io/stahldigital-ontology-demo/PercentageExtension"/>
+  </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/hasExtension_MilliM">
     <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
   </rdf:Description>
@@ -2688,12 +2688,6 @@ Identifier which relates the Table to descibe the yield stress by using differen
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/hasExtension_MilliM">
     <spo:hasUnitLabel>mm</spo:hasUnitLabel>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/TruePlasticStrainAtFracture">
-    <spo:isBasedOn rdf:resource="https://materialdigital.github.io/stahldigital-ontology-demo/OriginalCrosssection"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/TruePlasticStrainAtFracture">
-    <spo:isBasedOn rdf:resource="https://materialdigital.github.io/stahldigital-ontology-demo/MinimumCrosssectionAfterFracture"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/TruePlasticStrainAtFracture">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
@@ -2737,6 +2731,12 @@ Identifier which relates the Table to descibe the yield stress by using differen
   <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/TruePlasticStrainAtFracture">
     <spo:hasTypicalUnitLabel>%</spo:hasTypicalUnitLabel>
   </rdf:Description>
+  <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/TruePlasticStrainAtFracture">
+    <spo:isBasedOn rdf:resource="https://materialdigital.github.io/stahldigital-ontology-demo/OriginalCrosssection"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/TruePlasticStrainAtFracture">
+    <spo:isBasedOn rdf:resource="https://materialdigital.github.io/stahldigital-ontology-demo/MinimumCrosssectionAfterFracture"/>
+  </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/hasTime">
     <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
   </rdf:Description>
@@ -2756,6 +2756,9 @@ Identifier which relates the Table to descibe the yield stress by using differen
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/SpecWeight">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/SpecWeight">
     <rdfs:label xml:lang="en">SpecWeight</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/SpecWeight">
@@ -2769,9 +2772,6 @@ Identifier which relates the Table to descibe the yield stress by using differen
   </rdf:Description>
   <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/SpecWeight">
     <skos:preflabel xml:lang="en">SpecWeight</skos:preflabel>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/SpecWeight">
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/SpecWeight">
     <spo:hasSymbol xml:lang="en">w</spo:hasSymbol>
@@ -2954,30 +2954,6 @@ Identifier which relates the Table to descibe the yield stress by using differen
     <skos:preflabel xml:lang="en">hasTester</skos:preflabel>
   </rdf:Description>
   <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/OriginalWidth">
-    <spo:hasLabelSource xml:lang="de">YS1-Fz-D1Q</spo:hasLabelSource>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/OriginalWidth">
-    <spo:hasExampleData>10054</spo:hasExampleData>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/OriginalWidth">
-    <spo:hasDescriptionCitationSource xml:lang="en">Authors</spo:hasDescriptionCitationSource>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/OriginalWidth">
-    <skos:related rdf:resource="https://materialdigital.github.io/stahldigital-ontology-demo/TestPieceGeometry"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/OriginalWidth">
-    <spo:hasTypicalUnitLabel>mm</spo:hasTypicalUnitLabel>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/OriginalWidth">
-    <spo:hasTypicalUnit rdf:resource="http://qudt.org/vocab/unit/MilliM"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/OriginalWidth">
-    <spo:hasSymbol xml:lang="en">b</spo:hasSymbol>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/OriginalWidth">
-    <spo:hasSymbol xml:lang="en">b_{0}</spo:hasSymbol>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/OriginalWidth">
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/OriginalWidth">
@@ -3009,6 +2985,30 @@ Identifier which relates the Table to descibe the yield stress by using differen
   </rdf:Description>
   <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/OriginalWidth">
     <skos:preflabel xml:lang="en">OriginalWidth</skos:preflabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/OriginalWidth">
+    <skos:related rdf:resource="https://materialdigital.github.io/stahldigital-ontology-demo/TestPieceGeometry"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/OriginalWidth">
+    <spo:hasDescriptionCitationSource xml:lang="en">Authors</spo:hasDescriptionCitationSource>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/OriginalWidth">
+    <spo:hasExampleData>10054</spo:hasExampleData>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/OriginalWidth">
+    <spo:hasLabelSource xml:lang="de">YS1-Fz-D1Q</spo:hasLabelSource>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/OriginalWidth">
+    <spo:hasSymbol xml:lang="en">b</spo:hasSymbol>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/OriginalWidth">
+    <spo:hasSymbol xml:lang="en">b_{0}</spo:hasSymbol>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/OriginalWidth">
+    <spo:hasTypicalUnit rdf:resource="http://qudt.org/vocab/unit/MilliM"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/OriginalWidth">
+    <spo:hasTypicalUnitLabel>mm</spo:hasTypicalUnitLabel>
   </rdf:Description>
   <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/hasSchaftdurchmesser_FBSIID6_Object">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
@@ -3122,6 +3122,9 @@ Identifier which relates the Table to descibe the yield stress by using differen
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/MatPiecewiseLinearPlasticity">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/MatPiecewiseLinearPlasticity">
     <rdfs:label xml:lang="en">MatPiecewiseLinearPlasticity</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/MatPiecewiseLinearPlasticity">
@@ -3139,11 +3142,11 @@ Identifier which relates the Table to descibe the yield stress by using differen
   <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/MatPiecewiseLinearPlasticity">
     <spo:hasLabelSource xml:lang="en">LS-DYNA_Manual_Volume_2</spo:hasLabelSource>
   </rdf:Description>
-  <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/MatPiecewiseLinearPlasticity">
+  <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/TestTemperature">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/TestTemperature">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/TestTemperature">
     <rdfs:label xml:lang="en">TestTemperature</rdfs:label>
@@ -3162,9 +3165,6 @@ Identifier which relates the Table to descibe the yield stress by using differen
   </rdf:Description>
   <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/TestTemperature">
     <spo:hasExampleData>23</spo:hasExampleData>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/TestTemperature">
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/TestTemperature">
     <spo:hasSymbol xml:lang="en">T</spo:hasSymbol>
@@ -3233,6 +3233,9 @@ Identifier which relates the Table to descibe the yield stress by using differen
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/Schaftfestigkeit_FBSIID6_GVZ">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/Schaftfestigkeit_FBSIID6_GVZ">
     <rdfs:label xml:lang="en">Schaftfestigkeit_FBSIID6_GVZ</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/Schaftfestigkeit_FBSIID6_GVZ">
@@ -3252,9 +3255,6 @@ Identifier which relates the Table to descibe the yield stress by using differen
   </rdf:Description>
   <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/Schaftfestigkeit_FBSIID6_GVZ">
     <skos:related rdf:resource="https://materialdigital.github.io/stahldigital-ontology-demo/Schaftdurchmesser_FBSIID6"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/Schaftfestigkeit_FBSIID6_GVZ">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/hasParallelLength_MilliM">
     <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
@@ -3380,6 +3380,12 @@ Identifier which relates the Table to descibe the yield stress by using differen
     <skos:preflabel xml:lang="en">hasYieldStress</skos:preflabel>
   </rdf:Description>
   <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/TestingFacility">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/TestingFacility">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/TestingFacility">
     <rdfs:label xml:lang="en">TestingFacility</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/TestingFacility">
@@ -3399,12 +3405,6 @@ Identifier which relates the Table to descibe the yield stress by using differen
   </rdf:Description>
   <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/TestingFacility">
     <spo:hasDescriptionCitationSource xml:lang="en">Authors</spo:hasDescriptionCitationSource>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/TestingFacility">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/TestingFacility">
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/hasMatPiecewiseLinearPlasticityLogInterpolation_Object">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
@@ -3458,6 +3458,9 @@ Identifier which relates the Table to descibe the yield stress by using differen
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/Machine">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/Machine">
     <rdfs:label xml:lang="en">Machine</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/Machine">
@@ -3483,9 +3486,6 @@ Identifier which relates the Table to descibe the yield stress by using differen
   </rdf:Description>
   <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/Machine">
     <spo:hasLabelSource xml:lang="de">YS1-Fz-D1Q</spo:hasLabelSource>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/Machine">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/hasProject_Number_Object">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
@@ -3519,18 +3519,6 @@ Identifier which relates the Table to descibe the yield stress by using differen
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/attributeA">
     <skos:preflabel xml:lang="en">attributeA Label EN</skos:preflabel>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/ParallelLength">
-    <spo:hasLabelSource xml:lang="de">YS1-Fz-D1Q</spo:hasLabelSource>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/ParallelLength">
-    <spo:hasTypicalUnitLabel>mm</spo:hasTypicalUnitLabel>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/ParallelLength">
-    <spo:hasTypicalUnit rdf:resource="http://qudt.org/vocab/unit/MilliM"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/ParallelLength">
-    <spo:hasSymbol xml:lang="en">L_{c}</spo:hasSymbol>
   </rdf:Description>
   <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/ParallelLength">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
@@ -3570,6 +3558,18 @@ Identifier which relates the Table to descibe the yield stress by using differen
   </rdf:Description>
   <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/ParallelLength">
     <spo:hasExampleData>25</spo:hasExampleData>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/ParallelLength">
+    <spo:hasLabelSource xml:lang="de">YS1-Fz-D1Q</spo:hasLabelSource>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/ParallelLength">
+    <spo:hasSymbol xml:lang="en">L_{c}</spo:hasSymbol>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/ParallelLength">
+    <spo:hasTypicalUnit rdf:resource="http://qudt.org/vocab/unit/MilliM"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/ParallelLength">
+    <spo:hasTypicalUnitLabel>mm</spo:hasTypicalUnitLabel>
   </rdf:Description>
   <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/hasSchaftfestigkeit_FBSIID6_R_Object">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
@@ -3632,6 +3632,9 @@ Identifier which relates the Table to descibe the yield stress by using differen
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/Time">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/Time">
     <rdfs:label xml:lang="en">Time</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/Time">
@@ -3661,9 +3664,6 @@ Identifier which relates the Table to descibe the yield stress by using differen
   <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/Time">
     <spo:hasLabelSource xml:lang="de">YS1-Fz-D1Q</spo:hasLabelSource>
   </rdf:Description>
-  <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/Time">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
   <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/hasNominalEngineeringStrainRate_Object">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
   </rdf:Description>
@@ -3678,18 +3678,6 @@ Identifier which relates the Table to descibe the yield stress by using differen
   </rdf:Description>
   <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/hasNominalEngineeringStrainRate_Object">
     <skos:preflabel xml:lang="en">hasNominalEngineeringStrainRate</skos:preflabel>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/MeanEngineeringStrainRate">
-    <spo:isBasedOn rdf:resource="https://materialdigital.github.io/stahldigital-ontology-demo/ExtensometerGaugeLength"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/MeanEngineeringStrainRate">
-    <spo:hasTypicalUnitLabel>s-1</spo:hasTypicalUnitLabel>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/MeanEngineeringStrainRate">
-    <spo:isBasedOn rdf:resource="https://materialdigital.github.io/stahldigital-ontology-demo/Extension"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/MeanEngineeringStrainRate">
-    <spo:isBasedOn rdf:resource="https://materialdigital.github.io/stahldigital-ontology-demo/Time"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/MeanEngineeringStrainRate">
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -3730,8 +3718,23 @@ Identifier which relates the Table to descibe the yield stress by using differen
   <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/MeanEngineeringStrainRate">
     <spo:hasTypicalUnit rdf:resource="http://qudt.org/vocab/unit/PER-SEC"/>
   </rdf:Description>
+  <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/MeanEngineeringStrainRate">
+    <spo:hasTypicalUnitLabel>s-1</spo:hasTypicalUnitLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/MeanEngineeringStrainRate">
+    <spo:isBasedOn rdf:resource="https://materialdigital.github.io/stahldigital-ontology-demo/ExtensometerGaugeLength"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/MeanEngineeringStrainRate">
+    <spo:isBasedOn rdf:resource="https://materialdigital.github.io/stahldigital-ontology-demo/Extension"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/MeanEngineeringStrainRate">
+    <spo:isBasedOn rdf:resource="https://materialdigital.github.io/stahldigital-ontology-demo/Time"/>
+  </rdf:Description>
   <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/MatPiecewiseLinearPlasticityLogInterpolation">
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/MatPiecewiseLinearPlasticityLogInterpolation">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/MatPiecewiseLinearPlasticityLogInterpolation">
     <rdfs:label xml:lang="en">MatPiecewiseLinearPlasticityLogInterpolation</rdfs:label>
@@ -3750,9 +3753,6 @@ Identifier which relates the Table to descibe the yield stress by using differen
   </rdf:Description>
   <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/MatPiecewiseLinearPlasticityLogInterpolation">
     <spo:hasLabelSource xml:lang="en">LS-DYNA_Manual_Volume_2</spo:hasLabelSource>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/MatPiecewiseLinearPlasticityLogInterpolation">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/hasTrueStressAtFracture_MegaPA">
     <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
@@ -3893,6 +3893,9 @@ Identifier which relates the Table to descibe the yield stress by using differen
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/ProjectName">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/ProjectName">
     <rdfs:label xml:lang="en">ProjectName</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/ProjectName">
@@ -3915,9 +3918,6 @@ Identifier which relates the Table to descibe the yield stress by using differen
   </rdf:Description>
   <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/ProjectName">
     <spo:hasLabelSource xml:lang="de">YS1-Fz-D1Q</spo:hasLabelSource>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/ProjectName">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/hasYieldingIdentifier_Object">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
@@ -4100,15 +4100,6 @@ Identifier which relates the Table to descibe the yield stress by using differen
     <skos:preflabel xml:lang="en">hasOriginalWidth</skos:preflabel>
   </rdf:Description>
   <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/ModulusOfElasticity">
-    <spo:hasSymbol xml:lang="en">E</spo:hasSymbol>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/ModulusOfElasticity">
-    <spo:hasTypicalUnitLabel>MPa</spo:hasTypicalUnitLabel>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/ModulusOfElasticity">
-    <spo:hasTypicalUnit rdf:resource="http://qudt.org/vocab/unit/MegaPA"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/ModulusOfElasticity">
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/ModulusOfElasticity">
@@ -4150,8 +4141,20 @@ Identifier which relates the Table to descibe the yield stress by using differen
   <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/ModulusOfElasticity">
     <spo:hasLabelSource xml:lang="de">YS1-Fz-D1Q</spo:hasLabelSource>
   </rdf:Description>
+  <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/ModulusOfElasticity">
+    <spo:hasSymbol xml:lang="en">E</spo:hasSymbol>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/ModulusOfElasticity">
+    <spo:hasTypicalUnit rdf:resource="http://qudt.org/vocab/unit/MegaPA"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/ModulusOfElasticity">
+    <spo:hasTypicalUnitLabel>MPa</spo:hasTypicalUnitLabel>
+  </rdf:Description>
   <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/Loadcell">
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/Loadcell">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/Loadcell">
     <rdfs:label xml:lang="en">Loadcell</rdfs:label>
@@ -4169,9 +4172,6 @@ Identifier which relates the Table to descibe the yield stress by using differen
     <skos:preflabel xml:lang="en">Loadcell</skos:preflabel>
   </rdf:Description>
   <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/Loadcell">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/Loadcell">
     <spo:hasTypicalUnit rdf:resource="http://qudt.org/vocab/unit/N"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/Loadcell">
@@ -4179,6 +4179,9 @@ Identifier which relates the Table to descibe the yield stress by using differen
   </rdf:Description>
   <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/Schaftfestigkeit_FBSIID6_R">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/Schaftfestigkeit_FBSIID6_R">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/Schaftfestigkeit_FBSIID6_R">
     <rdfs:label xml:lang="en">Schaftfestigkeit_FBSIID6_R</rdfs:label>
@@ -4202,9 +4205,6 @@ Identifier which relates the Table to descibe the yield stress by using differen
     <skos:related rdf:resource="https://materialdigital.github.io/stahldigital-ontology-demo/Schaftdurchmesser_FBSIID6"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/Schaftfestigkeit_FBSIID6_R">
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/Schaftfestigkeit_FBSIID6_R">
     <spo:hasTypicalUnit rdf:resource="http://qudt.org/vocab/unit/MegaPA"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/Schaftfestigkeit_FBSIID6_R">
@@ -4226,6 +4226,9 @@ Identifier which relates the Table to descibe the yield stress by using differen
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/MinTimeStep4ElementDel">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/MinTimeStep4ElementDel">
     <rdfs:label xml:lang="en">MinTimeStep4ElementDel</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/MinTimeStep4ElementDel">
@@ -4245,9 +4248,6 @@ Identifier which relates the Table to descibe the yield stress by using differen
   </rdf:Description>
   <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/MinTimeStep4ElementDel">
     <spo:hasLabelSource xml:lang="en">LS-DYNA_Manual_Volume_2</spo:hasLabelSource>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/MinTimeStep4ElementDel">
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/MinTimeStep4ElementDel">
     <spo:hasTypicalUnit rdf:resource="https://qudt.org/vocab/unit/SEC"/>
@@ -4289,6 +4289,9 @@ Identifier which relates the Table to descibe the yield stress by using differen
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/OriginalThickness">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/OriginalThickness">
     <rdfs:label xml:lang="en">OriginalThickness</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/OriginalThickness">
@@ -4314,9 +4317,6 @@ Identifier which relates the Table to descibe the yield stress by using differen
   </rdf:Description>
   <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/OriginalThickness">
     <spo:hasLabelSource xml:lang="de">YS1-Fz-D1Q</spo:hasLabelSource>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/OriginalThickness">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/OriginalThickness">
     <spo:hasSymbol xml:lang="en">a_{0}</spo:hasSymbol>
@@ -4352,6 +4352,9 @@ Identifier which relates the Table to descibe the yield stress by using differen
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/PercentageExtension">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/PercentageExtension">
     <rdfs:label xml:lang="en">PercentageExtension</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/PercentageExtension">
@@ -4374,9 +4377,6 @@ Identifier which relates the Table to descibe the yield stress by using differen
   </rdf:Description>
   <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/PercentageExtension">
     <spo:hasLabelSource xml:lang="de">YS1-Fz-D1Q</spo:hasLabelSource>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/PercentageExtension">
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/PercentageExtension">
     <spo:hasTypicalUnitLabel>- </spo:hasTypicalUnitLabel>
@@ -4475,6 +4475,9 @@ Identifier which relates the Table to descibe the yield stress by using differen
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/StrainRateFormulationFlag">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/StrainRateFormulationFlag">
     <rdfs:label xml:lang="en">StrainRateFormulationFlag</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/StrainRateFormulationFlag">
@@ -4498,9 +4501,6 @@ Identifier which relates the Table to descibe the yield stress by using differen
   </rdf:Description>
   <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/StrainRateFormulationFlag">
     <spo:hasLabelSource xml:lang="en">LS-DYNA_Manual_Volume_2</spo:hasLabelSource>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/StrainRateFormulationFlag">
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/hasForceAtFracture">
     <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
@@ -4536,6 +4536,9 @@ Identifier which relates the Table to descibe the yield stress by using differen
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/YieldStrength_0_2_percentil">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/YieldStrength_0_2_percentil">
     <rdfs:label xml:lang="en">YieldStrength_0_2_percentil</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/YieldStrength_0_2_percentil">
@@ -4558,9 +4561,6 @@ Identifier which relates the Table to descibe the yield stress by using differen
   </rdf:Description>
   <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/YieldStrength_0_2_percentil">
     <spo:hasExampleData>230</spo:hasExampleData>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/YieldStrength_0_2_percentil">
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/YieldStrength_0_2_percentil">
     <spo:hasSymbol xml:lang="en">Rp0,2</spo:hasSymbol>
@@ -4629,7 +4629,7 @@ Identifier which relates the Table to descibe the yield stress by using differen
     <dcterms:created>2023-06-01</dcterms:created>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology">
-    <dcterms:date>2024-05-11T01:04:44+00:00</dcterms:date>
+    <dcterms:date>2024-05-11T03:04:29+00:00</dcterms:date>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology">
     <dcterms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
@@ -4644,10 +4644,13 @@ Identifier which relates the Table to descibe the yield stress by using differen
     <skos:prefLabel xml:lang="en">CI Mock FIle</skos:prefLabel>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology">
-    <ns0:depiction xmlns:ns0="http://xmlns.com/foaf/0.1/">https://w3id.org/steel/ProcessOntology/graph.png</ns0:depiction>
+    <foaf:depiction>https://w3id.org/steel/ProcessOntology/graph.png</foaf:depiction>
   </rdf:Description>
   <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/ForceAtFracture">
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/ForceAtFracture">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/ForceAtFracture">
     <rdfs:label xml:lang="en">ForceAtFracture</rdfs:label>
@@ -4666,9 +4669,6 @@ Identifier which relates the Table to descibe the yield stress by using differen
   </rdf:Description>
   <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/ForceAtFracture">
     <spo:hasDescriptionCitationSource xml:lang="en">Authors</spo:hasDescriptionCitationSource>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/ForceAtFracture">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/hasPercentageReductionOfArea_PERCENT">
     <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
@@ -4761,21 +4761,6 @@ Identifier which relates the Table to descibe the yield stress by using differen
     <skos:preflabel xml:lang="en">hasExtensionMeasuringSystem</skos:preflabel>
   </rdf:Description>
   <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/PercentagePlasticExtensionAtMaximumForce">
-    <spo:hasTypicalUnit rdf:resource="http://qudt.org/vocab/unit/PERCENT"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/PercentagePlasticExtensionAtMaximumForce">
-    <spo:hasSymbol xml:lang="en">A_{g}</spo:hasSymbol>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/PercentagePlasticExtensionAtMaximumForce">
-    <spo:isBasedOn rdf:resource="https://materialdigital.github.io/stahldigital-ontology-demo/TensileStrength"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/PercentagePlasticExtensionAtMaximumForce">
-    <spo:isBasedOn rdf:resource="https://materialdigital.github.io/stahldigital-ontology-demo/PercentagePermanentExtension"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/PercentagePlasticExtensionAtMaximumForce">
-    <spo:hasTypicalUnitLabel>%</spo:hasTypicalUnitLabel>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/PercentagePlasticExtensionAtMaximumForce">
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/PercentagePlasticExtensionAtMaximumForce">
@@ -4813,5 +4798,20 @@ Identifier which relates the Table to descibe the yield stress by using differen
   </rdf:Description>
   <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/PercentagePlasticExtensionAtMaximumForce">
     <spo:hasLabelSource xml:lang="de">YS1-Fz-D1Q</spo:hasLabelSource>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/PercentagePlasticExtensionAtMaximumForce">
+    <spo:hasSymbol xml:lang="en">A_{g}</spo:hasSymbol>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/PercentagePlasticExtensionAtMaximumForce">
+    <spo:hasTypicalUnit rdf:resource="http://qudt.org/vocab/unit/PERCENT"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/PercentagePlasticExtensionAtMaximumForce">
+    <spo:hasTypicalUnitLabel>%</spo:hasTypicalUnitLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/PercentagePlasticExtensionAtMaximumForce">
+    <spo:isBasedOn rdf:resource="https://materialdigital.github.io/stahldigital-ontology-demo/TensileStrength"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/PercentagePlasticExtensionAtMaximumForce">
+    <spo:isBasedOn rdf:resource="https://materialdigital.github.io/stahldigital-ontology-demo/PercentagePermanentExtension"/>
   </rdf:Description>
 </rdf:RDF>

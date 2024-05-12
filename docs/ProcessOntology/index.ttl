@@ -1593,7 +1593,7 @@ spo:hasModulusOfElasticity_MegaPA
         dc:description       "Ontology description EN"@en;
         dcterms:contributor  " Author 2" , "Author 1";
         dcterms:created      "2023-06-01";
-        dcterms:date         "2024-05-12T03:04:17+00:00";
+        dcterms:date         "2024-05-12T04:04:36+00:00";
         dcterms:license      <https://creativecommons.org/licenses/by/4.0/>;
         dcterms:rights       "CC-BY xlsx2owl";
         owl:versionInfo      "2.0"@en;

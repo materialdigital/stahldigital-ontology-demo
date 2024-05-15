@@ -2732,10 +2732,10 @@ Identifier which relates the Table to descibe the yield stress by using differen
     <spo:hasTypicalUnitLabel>%</spo:hasTypicalUnitLabel>
   </rdf:Description>
   <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/TruePlasticStrainAtFracture">
-    <spo:isBasedOn rdf:resource="https://materialdigital.github.io/stahldigital-ontology-demo/MinimumCrosssectionAfterFracture"/>
+    <spo:isBasedOn rdf:resource="https://materialdigital.github.io/stahldigital-ontology-demo/OriginalCrosssection"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://materialdigital.github.io/stahldigital-ontology-demo/TruePlasticStrainAtFracture">
-    <spo:isBasedOn rdf:resource="https://materialdigital.github.io/stahldigital-ontology-demo/OriginalCrosssection"/>
+    <spo:isBasedOn rdf:resource="https://materialdigital.github.io/stahldigital-ontology-demo/MinimumCrosssectionAfterFracture"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/hasTime">
     <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
@@ -4629,7 +4629,7 @@ Identifier which relates the Table to descibe the yield stress by using differen
     <dcterms:created>2023-06-01</dcterms:created>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology">
-    <dcterms:date>2024-05-15T09:04:16+00:00</dcterms:date>
+    <dcterms:date>2024-05-15T10:04:16+00:00</dcterms:date>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology">
     <dcterms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
